@@ -15,15 +15,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
 
-        
-        let layer = CAGradientLayer()
-        layer.frame = view.bounds
-        layer.colors = [UIColor.red.cgColor, UIColor.purple.cgColor]
-        layer.startPoint = CGPoint(x: 0, y: 0)
-        view.layer.addSublayer(layer)
-        
-        
-        
         self.title = "VibrApp"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.barTintColor = view.backgroundColor
@@ -31,6 +22,12 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         let textAttribute = [NSAttributedStringKey.foregroundColor:UIColor.red]
         navigationController?.navigationBar.titleTextAttributes = textAttribute
+        
+        let layer = CAGradientLayer()
+        layer.frame = view.bounds
+        layer.colors = [UIColor.red.cgColor, UIColor.purple.cgColor]
+        layer.startPoint = CGPoint(x: 0, y: 0)
+        view.layer.addSublayer(layer)
         
         super.viewDidLoad()
     }
@@ -44,6 +41,8 @@ class ViewController: UIViewController {
         
         self.navigationController?.navigationBar.isHidden = false
     }
+    
+    
 
 }
 
