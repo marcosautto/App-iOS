@@ -12,8 +12,6 @@
 		6420F31321527F1000891BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6420F31121527F1000891BAA /* Main.storyboard */; };
 		6420F31521527F1100891BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6420F31421527F1100891BAA /* Assets.xcassets */; };
 		6420F31821527F1100891BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6420F31621527F1100891BAA /* LaunchScreen.storyboard */; };
-		6420F32321527F1100891BAA /* DesignTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F32221527F1100891BAA /* DesignTestTests.swift */; };
-		6420F32E21527F1100891BAA /* DesignTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F32D21527F1100891BAA /* DesignTestUITests.swift */; };
 		6420F33C2152BB6000891BAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F33B2152BB6000891BAA /* SettingsViewController.swift */; };
 		6420F33E2152DAEE00891BAA /* EasterEggCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F33D2152DAEE00891BAA /* EasterEggCollectionViewController.swift */; };
 		6457D6042153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6457D6032153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 */; };
@@ -48,11 +46,7 @@
 		6420F31721527F1100891BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6420F31921527F1100891BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6420F31E21527F1100891BAA /* DesignTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6420F32221527F1100891BAA /* DesignTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTestTests.swift; sourceTree = "<group>"; };
-		6420F32421527F1100891BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6420F32921527F1100891BAA /* DesignTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6420F32D21527F1100891BAA /* DesignTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTestUITests.swift; sourceTree = "<group>"; };
-		6420F32F21527F1100891BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6420F33B2152BB6000891BAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6420F33D2152DAEE00891BAA /* EasterEggCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterEggCollectionViewController.swift; sourceTree = "<group>"; };
 		6457D6032153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Bublè - Moondance.mp3"; path = "../../../../Songs/Micheal Bublè - Moondance.mp3"; sourceTree = "<group>"; };
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				6420F30C21527F1000891BAA /* DesignTest */,
-				6420F32121527F1100891BAA /* DesignTestTests */,
-				6420F32C21527F1100891BAA /* DesignTestUITests */,
 				6420F30B21527F1000891BAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,24 +113,6 @@
 				64ECDD202153A243006A864B /* Songs */,
 			);
 			path = DesignTest;
-			sourceTree = "<group>";
-		};
-		6420F32121527F1100891BAA /* DesignTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				6420F32221527F1100891BAA /* DesignTestTests.swift */,
-				6420F32421527F1100891BAA /* Info.plist */,
-			);
-			path = DesignTestTests;
-			sourceTree = "<group>";
-		};
-		6420F32C21527F1100891BAA /* DesignTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6420F32D21527F1100891BAA /* DesignTestUITests.swift */,
-				6420F32F21527F1100891BAA /* Info.plist */,
-			);
-			path = DesignTestUITests;
 			sourceTree = "<group>";
 		};
 		64ECDD202153A243006A864B /* Songs */ = {
@@ -297,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6420F32321527F1100891BAA /* DesignTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6420F32E21527F1100891BAA /* DesignTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MS.DesignTest;
+				PRODUCT_BUNDLE_IDENTIFIER = musicaecoding.VibrApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MS.DesignTest;
+				PRODUCT_BUNDLE_IDENTIFIER = musicaecoding.VibrApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
