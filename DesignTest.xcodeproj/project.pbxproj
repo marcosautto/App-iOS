@@ -14,6 +14,12 @@
 		6420F31821527F1100891BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6420F31621527F1100891BAA /* LaunchScreen.storyboard */; };
 		6420F32321527F1100891BAA /* DesignTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F32221527F1100891BAA /* DesignTestTests.swift */; };
 		6420F32E21527F1100891BAA /* DesignTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F32D21527F1100891BAA /* DesignTestUITests.swift */; };
+		6420F33C2152BB6000891BAA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F33B2152BB6000891BAA /* SettingsViewController.swift */; };
+		6420F33E2152DAEE00891BAA /* EasterEggCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6420F33D2152DAEE00891BAA /* EasterEggCollectionViewController.swift */; };
+		6457D6042153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6457D6032153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 */; };
+		64ECDD1F21539F14006A864B /* selectSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64ECDD1E21539F14006A864B /* selectSong.swift */; };
+		64ECDD222153A263006A864B /* Micheal Bublè - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 64ECDD212153A263006A864B /* Micheal Bublè - Moondance.mp3 */; };
+		64ECDD242153A2B2006A864B /* Micheal Bublè - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 64ECDD232153A2B2006A864B /* Micheal Bublè - Moondance.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		6420F32921527F1100891BAA /* DesignTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6420F32D21527F1100891BAA /* DesignTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTestUITests.swift; sourceTree = "<group>"; };
 		6420F32F21527F1100891BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6420F33B2152BB6000891BAA /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6420F33D2152DAEE00891BAA /* EasterEggCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasterEggCollectionViewController.swift; sourceTree = "<group>"; };
+		6457D6032153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Bublè - Moondance.mp3"; path = "../../../../Songs/Micheal Bublè - Moondance.mp3"; sourceTree = "<group>"; };
+		64ECDD1E21539F14006A864B /* selectSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSong.swift; sourceTree = "<group>"; };
+		64ECDD212153A263006A864B /* Micheal Bublè - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Bublè - Moondance.mp3"; path = "../../../../Songs/Micheal Bublè - Moondance.mp3"; sourceTree = "<group>"; };
+		64ECDD232153A2B2006A864B /* Micheal Bublè - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Bublè - Moondance.mp3"; path = "../../../../Songs/Micheal Bublè - Moondance.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +112,13 @@
 				6420F30D21527F1000891BAA /* AppDelegate.swift */,
 				6420F30F21527F1000891BAA /* ViewController.swift */,
 				6420F31121527F1000891BAA /* Main.storyboard */,
+				6420F33B2152BB6000891BAA /* SettingsViewController.swift */,
+				6420F33D2152DAEE00891BAA /* EasterEggCollectionViewController.swift */,
 				6420F31421527F1100891BAA /* Assets.xcassets */,
 				6420F31621527F1100891BAA /* LaunchScreen.storyboard */,
 				6420F31921527F1100891BAA /* Info.plist */,
+				64ECDD1E21539F14006A864B /* selectSong.swift */,
+				64ECDD202153A243006A864B /* Songs */,
 			);
 			path = DesignTest;
 			sourceTree = "<group>";
@@ -123,6 +139,16 @@
 				6420F32F21527F1100891BAA /* Info.plist */,
 			);
 			path = DesignTestUITests;
+			sourceTree = "<group>";
+		};
+		64ECDD202153A243006A864B /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				6457D6032153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 */,
+				64ECDD232153A2B2006A864B /* Micheal Bublè - Moondance.mp3 */,
+				64ECDD212153A263006A864B /* Micheal Bublè - Moondance.mp3 */,
+			);
+			path = Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +255,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64ECDD242153A2B2006A864B /* Micheal Bublè - Moondance.mp3 in Resources */,
 				6420F31821527F1100891BAA /* LaunchScreen.storyboard in Resources */,
+				64ECDD222153A263006A864B /* Micheal Bublè - Moondance.mp3 in Resources */,
 				6420F31521527F1100891BAA /* Assets.xcassets in Resources */,
 				6420F31321527F1000891BAA /* Main.storyboard in Resources */,
+				6457D6042153A2C300D827E5 /* Micheal Bublè - Moondance.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6420F33E2152DAEE00891BAA /* EasterEggCollectionViewController.swift in Sources */,
 				6420F31021527F1000891BAA /* ViewController.swift in Sources */,
 				6420F30E21527F1000891BAA /* AppDelegate.swift in Sources */,
+				64ECDD1F21539F14006A864B /* selectSong.swift in Sources */,
+				6420F33C2152BB6000891BAA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93JF9LS6ZY;
 				INFOPLIST_FILE = DesignTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 93JF9LS6ZY;
 				INFOPLIST_FILE = DesignTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
