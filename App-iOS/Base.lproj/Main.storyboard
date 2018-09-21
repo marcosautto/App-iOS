@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB1-U9-YR3">
-                                <rect key="frame" x="349" y="64" width="45" height="45"/>
+                                <rect key="frame" x="349" y="124" width="45" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="if_icon-ios7-gear_211751"/>
                                 <connections>
@@ -131,7 +131,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="4ba-25-xmz" kind="show" id="ovE-qg-XJp"/>
+                                            <segue destination="4ba-25-xmz" kind="show" id="fIF-Qa-gZO"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
