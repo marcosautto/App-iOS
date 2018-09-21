@@ -17,6 +17,8 @@ var audioPlayer = AVAudioPlayer();
 class selectSong: UITableViewController {
     
     override func viewDidLoad() {
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
+        self.tableView.separatorColor = UIColor.clear
         super.viewDidLoad()
         self.title = "Select a song"
         self.navigationController?.navigationBar.prefersLargeTitles = true
