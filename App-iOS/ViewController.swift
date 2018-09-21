@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgview: UIImageView!
     @IBOutlet weak var selectSongButton: UIButton!
     
-    
     override func viewDidLoad() {
         
         self.title = "VibrApp"
