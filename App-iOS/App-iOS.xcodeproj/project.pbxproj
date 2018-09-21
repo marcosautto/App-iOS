@@ -14,10 +14,6 @@
 		640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B682153F3560081078C /* LaunchScreen.storyboard */; };
 		640E8B722153F9050081078C /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B712153F9050081078C /* settingsScreen.swift */; };
 		640E8B742153FA080081078C /* selectSongScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B732153FA080081078C /* selectSongScreen.swift */; };
-		640E8B7A2153FCA90081078C /* Micheal Bublè - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B762153FCA90081078C /* Micheal Bublè - Moondance.mp3 */; };
-		640E8B7B2153FCA90081078C /* Travis Scott - Butterfly Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B772153FCA90081078C /* Travis Scott - Butterfly Effect.mp3 */; };
-		640E8B7C2153FCA90081078C /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B782153FCA90081078C /* Lil Uzi Vert - XO Tour Llif3.mp3 */; };
-		640E8B7D2153FCA90081078C /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B792153FCA90081078C /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +26,6 @@
 		640E8B6B2153F3560081078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640E8B712153F9050081078C /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		640E8B732153FA080081078C /* selectSongScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSongScreen.swift; sourceTree = "<group>"; };
-		640E8B762153FCA90081078C /* Micheal Bublè - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Micheal Bublè - Moondance.mp3"; sourceTree = "<group>"; };
-		640E8B772153FCA90081078C /* Travis Scott - Butterfly Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Travis Scott - Butterfly Effect.mp3"; sourceTree = "<group>"; };
-		640E8B782153FCA90081078C /* Lil Uzi Vert - XO Tour Llif3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lil Uzi Vert - XO Tour Llif3.mp3"; sourceTree = "<group>"; };
-		640E8B792153FCA90081078C /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,21 +66,8 @@
 				640E8B662153F3560081078C /* Assets.xcassets */,
 				640E8B682153F3560081078C /* LaunchScreen.storyboard */,
 				640E8B6B2153F3560081078C /* Info.plist */,
-				640E8B752153FCA90081078C /* Songs */,
 			);
 			path = "App-iOS";
-			sourceTree = "<group>";
-		};
-		640E8B752153FCA90081078C /* Songs */ = {
-			isa = PBXGroup;
-			children = (
-				640E8B762153FCA90081078C /* Micheal Bublè - Moondance.mp3 */,
-				640E8B772153FCA90081078C /* Travis Scott - Butterfly Effect.mp3 */,
-				640E8B782153FCA90081078C /* Lil Uzi Vert - XO Tour Llif3.mp3 */,
-				640E8B792153FCA90081078C /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */,
-			);
-			name = Songs;
-			path = ../../../Songs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +102,7 @@
 				TargetAttributes = {
 					640E8B5B2153F3550081078C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -151,11 +131,7 @@
 			files = (
 				640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */,
 				640E8B672153F3560081078C /* Assets.xcassets in Resources */,
-				640E8B7A2153FCA90081078C /* Micheal Bublè - Moondance.mp3 in Resources */,
-				640E8B7B2153FCA90081078C /* Travis Scott - Butterfly Effect.mp3 in Resources */,
-				640E8B7C2153FCA90081078C /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */,
 				640E8B652153F3550081078C /* Main.storyboard in Resources */,
-				640E8B7D2153FCA90081078C /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "musicaecoding.App-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -340,7 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "musicaecoding.App-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

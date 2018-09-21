@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = view.backgroundColor
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
 //        let layer = CAGradientLayer()
 //        layer.frame = view.bounds
