@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "gear2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "if_icon-ios7-gear_211751.png",
       "scale" : "2x"
     },
     {
