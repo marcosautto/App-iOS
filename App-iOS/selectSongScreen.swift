@@ -10,8 +10,12 @@ import UIKit
 
 class selectSong: UITableViewController {
     
+    var songs: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Select a song"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         gettingSongsList()
         print("1")
     }
@@ -25,12 +29,18 @@ class selectSong: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return (songs.count)
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = songs[indexPath.row]
+        return cell
     }
     
     func gettingSongsList()
@@ -44,7 +54,6 @@ class selectSong: UITableViewController {
             for song in songPath
             {
                 var mySong = song.absoluteString
-                print(mySong)
                 if mySong.contains(".mp3")
                 {
                     let findString = mySong.components(separatedBy: "/")
@@ -52,6 +61,7 @@ class selectSong: UITableViewController {
                     mySong = mySong.replacingOccurrences(of: "%20", with: " ")
                     mySong = mySong.replacingOccurrences(of: ".mp3", with: "")
                     print(mySong)
+                    songs.append(mySong)
                 }
             }
         }

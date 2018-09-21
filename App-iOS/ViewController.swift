@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var imgview: UIImageView!
+    @IBOutlet weak var selectSongButton: UIButton!
+    
     
     override func viewDidLoad() {
         
@@ -26,6 +30,8 @@ class ViewController: UIViewController {
         layer.colors = [UIColor.red.cgColor, UIColor.purple.cgColor]
         layer.startPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(layer)
+        view.addSubview(settingsButton)
+        view.addSubview(selectSongButton)
         
         
         
