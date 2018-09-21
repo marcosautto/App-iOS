@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var imgview: UIImageView!
     @IBOutlet weak var selectSongButton: UIButton!
+    @IBOutlet weak var songName: UILabel!
     
     override func viewDidLoad() {
         
