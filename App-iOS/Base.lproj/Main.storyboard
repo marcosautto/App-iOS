@@ -21,7 +21,7 @@
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Af-cyz">
                                 <rect key="frame" x="68" y="229" width="278" height="278"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="logo_main"/>
+                                <state key="normal" backgroundImage="Logo"/>
                                 <connections>
                                     <segue destination="Kij-3x-soM" kind="show" id="hKD-1p-23I"/>
                                 </connections>
@@ -220,7 +220,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Logo" width="1664" height="1663"/>
         <image name="if_icon-ios7-gear_211751" width="1068" height="1068"/>
-        <image name="logo_main" width="1671" height="1672"/>
     </resources>
 </document>
