@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradiente" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-Bx-qfT">
+                                <rect key="frame" x="0.0" y="-58" width="414" height="794"/>
+                            </imageView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Af-cyz">
                                 <rect key="frame" x="68" y="229" width="278" height="278"/>
                                 <constraints>
@@ -32,8 +35,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RjE-Bx-qfT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1nC-ny-iUp"/>
                             <constraint firstItem="Nxa-Af-cyz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="165" id="Dlz-ak-gGe"/>
+                            <constraint firstItem="RjE-Bx-qfT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-122" id="GYG-1b-Hdd"/>
+                            <constraint firstItem="RjE-Bx-qfT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NdU-xa-YzW"/>
                             <constraint firstItem="Nxa-Af-cyz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpG-Dr-e3m"/>
+                            <constraint firstItem="RjE-Bx-qfT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rJY-MC-Unl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -207,6 +214,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ota-oA-bnc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLF-Kk-d3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u6C-ko-naf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
@@ -219,7 +227,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gwd-dB-5lE"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fLF-Kk-d3e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="372" y="134"/>
         </scene>
@@ -227,5 +234,6 @@
     <resources>
         <image name="Logo" width="1511" height="1511"/>
         <image name="gear2" width="51" height="51"/>
+        <image name="gradiente" width="751" height="1335"/>
     </resources>
 </document>

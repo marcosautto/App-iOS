@@ -24,11 +24,12 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        let layer = CAGradientLayer()
-        layer.frame = view.bounds
-        layer.colors = [UIColor(hexString: "36CEF9").cgColor, UIColor(hexString: "269EF4").cgColor]
-        layer.startPoint = CGPoint(x: 0, y: 0)
-        view.layer.addSublayer(layer)
+        
+//        let layer = CAGradientLayer()
+//        layer.frame = view.bounds
+//        layer.colors = [UIColor(hexString: "36CEF9").cgColor, UIColor(hexString: "269EF4").cgColor]
+//        layer.startPoint = CGPoint(x: 0, y: 0)
+//        view.layer.addSublayer(layer)
 //        view.addSubview(settingsButton)
         view.addSubview(selectSongButton)
         
