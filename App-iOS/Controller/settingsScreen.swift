@@ -13,10 +13,15 @@ class settingsScreen: UITableViewController {
     override func viewDidLoad() {
         self.title = "Settings"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
+        self.tableView.separatorColor = UIColor.clear
         super.viewDidLoad()
-        
     }
 
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
