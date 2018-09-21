@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         
         let layer = CAGradientLayer()
         layer.frame = view.bounds
-        layer.colors = [UIColor.red.cgColor, UIColor.purple.cgColor]
+        layer.colors = [UIColor(hexString: "36CEF9").cgColor, UIColor(hexString: "269EF4").cgColor]
         layer.startPoint = CGPoint(x: 0, y: 0)
         view.layer.addSublayer(layer)
         view.addSubview(settingsButton)
