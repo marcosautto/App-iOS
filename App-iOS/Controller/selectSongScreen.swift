@@ -30,7 +30,7 @@ class selectSong: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - Table view data source
+    //TABELLA SELEZIONE CANZONI
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -58,6 +58,7 @@ class selectSong: UITableViewController {
             print("Error")
         }
     }
+    
     
     
     func gettingSongsList()
