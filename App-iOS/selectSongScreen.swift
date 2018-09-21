@@ -17,7 +17,6 @@ class selectSong: UITableViewController {
         self.title = "Select a song"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         gettingSongsList()
-        print("1")
     }
     
     override func didReceiveMemoryWarning() {
