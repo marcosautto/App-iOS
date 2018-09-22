@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradiente" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-Bx-qfT">
                                 <rect key="frame" x="0.0" y="-58" width="414" height="794"/>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Af-cyz">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Af-cyz">
                                 <rect key="frame" x="68" y="137" width="278" height="278"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="278" id="AN8-R2-ZMj"/>
@@ -32,23 +32,21 @@
                                     <segue destination="Kij-3x-soM" kind="show" id="hKD-1p-23I"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-R9-afS">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-R9-afS">
                                 <rect key="frame" x="149" y="559" width="117" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3N-MD-gJh">
-                                <rect key="frame" x="20" y="588" width="374" height="32"/>
+                                <rect key="frame" x="20" y="590" width="374" height="21.666666666666629"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to select a song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-vd-h6h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select a song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-vd-h6h">
                                 <rect key="frame" x="130" y="440" width="154" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -56,11 +54,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="sng-R9-afS" firstAttribute="top" secondItem="tsC-vd-h6h" secondAttribute="bottom" constant="98" id="0ln-DR-IfA"/>
                             <constraint firstItem="RjE-Bx-qfT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1nC-ny-iUp"/>
-                            <constraint firstItem="Nxa-Af-cyz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="165" id="Dlz-ak-gGe"/>
+                            <constraint firstItem="sng-R9-afS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="2DO-18-VW0"/>
                             <constraint firstItem="RjE-Bx-qfT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-122" id="GYG-1b-Hdd"/>
                             <constraint firstItem="RjE-Bx-qfT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NdU-xa-YzW"/>
+                            <constraint firstItem="tsC-vd-h6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="PfT-n1-rWB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tsC-vd-h6h" secondAttribute="trailing" constant="130" id="Q8n-SW-GMC"/>
+                            <constraint firstItem="Nxa-Af-cyz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="73" id="RBK-Kt-Lng"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sng-R9-afS" secondAttribute="trailing" constant="148" id="fE9-mS-HHL"/>
                             <constraint firstItem="Nxa-Af-cyz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fpG-Dr-e3m"/>
+                            <constraint firstItem="tsC-vd-h6h" firstAttribute="top" secondItem="Nxa-Af-cyz" secondAttribute="bottom" constant="25" id="ktU-pd-3bt"/>
+                            <constraint firstItem="sng-R9-afS" firstAttribute="top" secondItem="tsC-vd-h6h" secondAttribute="bottom" constant="98" id="lNw-RY-ogh"/>
                             <constraint firstItem="RjE-Bx-qfT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rJY-MC-Unl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -66,13 +66,6 @@ class selectSong: UITableViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! ViewController
-        destVC.tapTo.isHidden = true
-        destVC.songListening.isHidden = false
-        destVC.songName.isHidden = false
-        destVC.songName.text = selectedSong
-    }
     
     
     func gettingSongsList()
@@ -103,9 +96,13 @@ class selectSong: UITableViewController {
         }
     }
     
-//    func play(for segue: UIStoryboardSegue, sender: Any?){
-//            if let songSelected{
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! ViewController
+        destVC.tapTo.isHidden = true
+        destVC.songListening.isHidden = false
+        destVC.songName.isHidden = false
+        destVC.songName.text = selectedSong
+    }
+    
     
 }
