@@ -49,6 +49,7 @@ class selectSong: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = songs[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
