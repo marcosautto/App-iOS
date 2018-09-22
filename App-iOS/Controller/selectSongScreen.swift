@@ -13,6 +13,7 @@ import AVFoundation
 
 var songs: [String] = []
 var audioPlayer = AVAudioPlayer();
+var selectedSong: String!
 
 class selectSong: UITableViewController {
     
@@ -57,6 +58,7 @@ class selectSong: UITableViewController {
         do{
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            selectedSong = songs[indexPath.row]
             audioPlayer.play()
         }
         catch{
@@ -64,6 +66,12 @@ class selectSong: UITableViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! ViewController
+        destVC.songListening.isHidden = false
+        destVC.songName.isHidden = false
+        destVC.songName.text = selectedSong
+    }
     
     
     func gettingSongsList()
