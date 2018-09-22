@@ -21,6 +21,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradiente" translatesAutoresizingMaskIntoConstraints="NO" id="RjE-Bx-qfT">
                                 <rect key="frame" x="0.0" y="-58" width="414" height="794"/>
                             </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Af-cyz">
+                                <rect key="frame" x="68" y="137" width="278" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="AN8-R2-ZMj"/>
+                                    <constraint firstAttribute="width" constant="278" id="ZVK-p4-aSM"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Logo"/>
+                                <connections>
+                                    <segue destination="Kij-3x-soM" kind="show" id="hKD-1p-23I"/>
+                                </connections>
+                            </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-R9-afS">
                                 <rect key="frame" x="149" y="559" width="117" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,17 +46,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxa-Af-cyz">
-                                <rect key="frame" x="68" y="137" width="278" height="278"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="278" id="AN8-R2-ZMj"/>
-                                    <constraint firstAttribute="width" constant="278" id="ZVK-p4-aSM"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="Logo"/>
-                                <connections>
-                                    <segue destination="Kij-3x-soM" kind="show" id="hKD-1p-23I"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap to select a song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-vd-h6h">
+                                <rect key="frame" x="130" y="440" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -71,6 +78,7 @@
                         <outlet property="selectSongButton" destination="Nxa-Af-cyz" id="6ZZ-MH-dl3"/>
                         <outlet property="songListening" destination="sng-R9-afS" id="ua2-gx-WA6"/>
                         <outlet property="songName" destination="w3N-MD-gJh" id="XXo-DL-BmU"/>
+                        <outlet property="tapTo" destination="tsC-vd-h6h" id="LvK-Sa-h06"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
