@@ -11,16 +11,22 @@ import UIKit
 class settingsScreen: UITableViewController {
 
     @IBOutlet weak var themeSwitch: UISwitch!
+    @IBOutlet weak var flashlightSwitch: UISwitch!
+    @IBOutlet weak var nightModeSwitch: UISwitch!
     
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         if sender.isOn {
             self.tableView.backgroundView?.isHidden = true
             self.navigationController?.navigationBar.tintColor = UIColor.orange
             UserDefaults.standard.set("dark", forKey: "theme")
+            self.flashlightSwitch.onTintColor = UIColor.orange
+            self.nightModeSwitch.onTintColor = UIColor.orange
         } else {
             self.tableView.backgroundView?.isHidden = false
             self.navigationController?.navigationBar.tintColor = UIColor.white
             UserDefaults.standard.set("light", forKey: "theme")
+            self.flashlightSwitch.onTintColor = UIColor.cyan
+            self.nightModeSwitch.onTintColor = UIColor.cyan
         }
     }
     

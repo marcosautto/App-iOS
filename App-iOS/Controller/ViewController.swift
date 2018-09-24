@@ -22,15 +22,27 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     
     @IBAction func playPauseButton(_ sender: Any) {
+        
+        func pulse(){
+            selectSongButton.pulsate()
+        }
+        
+        func pulseStop(){
+            selectSongButton.pulsateStop()
+        }
+        
         if (audioPlayer.isPlaying)
         {
             audioPlayer.pause();
             playButton.setImage(UIImage(named: "Play.png"), for: .normal)
+            pulseStop()
+            
         }
         else
         {
             audioPlayer.play();
             playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
+            pulse()
         }
     }
     
@@ -47,15 +59,8 @@ class ViewController: UIViewController {
         
         view.addSubview(selectSongButton)
         
-        func pulseButton(){
-            selectSongButton.pulsate()
-        }
-        
-        pulseButton()
-        
         
         super.viewDidLoad()
-//        songName.text = selectedSong
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,18 +69,17 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        songName.text = selectedSong
-        func pulseButton(){
-            selectSongButton.pulsate()
-        }
         
-        pulseButton()
-        
+        songName.text = selectedSong;
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
                 self.imgview.isHidden = false
-            } else {
+                songListening.textColor = UIColor.white
+                tapTo.textColor = UIColor.white
+            } else {                                //Night Mode
                 self.imgview.isHidden = true
+                songListening.textColor = UIColor.orange
+                tapTo.textColor = UIColor.orange
         }
     }
         
@@ -83,7 +87,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ sender: UIStoryboardSegue){
-        
+        func pulse(){
+            selectSongButton.pulsate()
+        }
+        pulse()
     }
 
 }
