@@ -14,6 +14,7 @@ class settingsScreen: UITableViewController {
         self.title = "Settings"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
+        
         self.tableView.separatorColor = UIColor.clear
         super.viewDidLoad()
     }
