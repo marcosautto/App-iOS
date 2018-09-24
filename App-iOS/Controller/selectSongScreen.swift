@@ -20,9 +20,11 @@ class selectSong: UITableViewController {
     override func viewDidLoad() {
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
         self.tableView.separatorColor = UIColor.clear
-        super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.title = "Select a song"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+    self.navigationController?.navigationBar.prefersLargeTitles = true
+        super.viewDidLoad()
+        
         gettingSongsList()
     }
     
