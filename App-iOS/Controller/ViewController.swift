@@ -17,6 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapTo: UILabel!
     @IBOutlet weak var songListening: UILabel!
     @IBOutlet weak var songName: UILabel!
+    @IBAction func playPauseButton(_ sender: Any) {
+        if (audioPlayer.isPlaying)
+        {
+            audioPlayer.pause();
+        }
+        else
+        {
+            audioPlayer.play();
+        }
+    }
     
     override func viewDidLoad() {
         

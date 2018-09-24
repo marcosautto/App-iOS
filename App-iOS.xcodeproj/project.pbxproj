@@ -15,6 +15,7 @@
 		640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B682153F3560081078C /* LaunchScreen.storyboard */; };
 		640E8B722153F9050081078C /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B712153F9050081078C /* settingsScreen.swift */; };
 		640E8B742153FA080081078C /* selectSongScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B732153FA080081078C /* selectSongScreen.swift */; };
+		6418660F2158D7DD001CDC0B /* aboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418660E2158D7DD001CDC0B /* aboutScreen.swift */; };
 		643C448D2154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */; };
 		643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */; };
 		643C448F2154E63D00914068 /* Micheal Buble - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */; };
