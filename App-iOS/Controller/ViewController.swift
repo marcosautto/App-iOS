@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var logo: UIImageView!
@@ -17,14 +19,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapTo: UILabel!
     @IBOutlet weak var songListening: UILabel!
     @IBOutlet weak var songName: UILabel!
+    @IBOutlet weak var playButton: UIButton!
+    
     @IBAction func playPauseButton(_ sender: Any) {
         if (audioPlayer.isPlaying)
         {
             audioPlayer.pause();
+            playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
         }
         else
         {
             audioPlayer.play();
+            playButton.setImage(UIImage(named: "Play.png"), for: .normal)
         }
     }
     
@@ -57,6 +63,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
                 self.imgview.isHidden = false

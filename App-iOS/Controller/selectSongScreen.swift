@@ -114,6 +114,7 @@ class selectSong: UITableViewController {
         destVC.songListening.isHidden = false
         destVC.songName.isHidden = false
         destVC.songName.text = selectedSong
+        destVC.playButton.isHidden = false
     }
     
     

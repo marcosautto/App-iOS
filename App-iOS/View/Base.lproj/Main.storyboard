@@ -51,10 +51,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-QN-5vS">
-                                <rect key="frame" x="192" y="669" width="30" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-QN-5vS">
+                                <rect key="frame" x="130" y="590" width="170" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play">
+                                <state key="normal" image="Pause">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -91,6 +91,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
                         <outlet property="imgview" destination="RjE-Bx-qfT" id="Ksb-TW-3jz"/>
+                        <outlet property="playButton" destination="rcm-QN-5vS" id="ecx-V5-oUH"/>
                         <outlet property="selectSongButton" destination="Nxa-Af-cyz" id="6ZZ-MH-dl3"/>
                         <outlet property="songListening" destination="sng-R9-afS" id="ua2-gx-WA6"/>
                         <outlet property="songName" destination="w3N-MD-gJh" id="XXo-DL-BmU"/>
@@ -339,6 +340,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="1511" height="1511"/>
+        <image name="Pause" width="33" height="33"/>
         <image name="gear2" width="51" height="51"/>
         <image name="gradiente" width="751" height="1335"/>
     </resources>
