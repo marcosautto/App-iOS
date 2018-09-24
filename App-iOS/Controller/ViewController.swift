@@ -55,6 +55,7 @@ class ViewController: UIViewController {
         
         
         super.viewDidLoad()
+//        songName.text = selectedSong
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,7 +64,7 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        songName.text = selectedSong
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
                 self.imgview.isHidden = false
