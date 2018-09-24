@@ -10,10 +10,12 @@ import UIKit
 
 class settingsScreen: UITableViewController {
 
-    @IBAction func nightModeSwitch(_ sender: Any) {
-        //LUIGI CONTROLLA QUA
-        self.tableView.backgroundView?.isHidden = true
-        self.tableView.backgroundColor = UIColor.black.cgColor
+    @IBAction func nightModeSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            self.tableView.backgroundView?.isHidden = true
+        } else {
+            self.tableView.backgroundView?.isHidden = false
+        }
     }
     
     override func viewDidLoad() {
@@ -22,6 +24,7 @@ class settingsScreen: UITableViewController {
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
         
         self.tableView.separatorColor = UIColor.clear
+        self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
     }
 
