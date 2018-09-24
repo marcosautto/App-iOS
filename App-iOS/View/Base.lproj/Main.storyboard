@@ -241,7 +241,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" fixedFrame="YES" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mxm-JV-O0O">
-                                <rect key="frame" x="114" y="197.00000000000003" width="186" height="258.66666666666669"/>
+                                <rect key="frame" x="114" y="206.00000000000003" width="186" height="258.66666666666669"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTC-a6-ue9">
