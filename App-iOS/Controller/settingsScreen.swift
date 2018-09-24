@@ -10,6 +10,11 @@ import UIKit
 
 class settingsScreen: UITableViewController {
 
+    @IBAction func nightModeSwitch(_ sender: Any) {
+        //LUIGI CONTROLLA QUA
+        self.tableView.backgroundView.clear
+    }
+    
     override func viewDidLoad() {
         self.title = "Settings"
         self.navigationController?.navigationBar.prefersLargeTitles = true
