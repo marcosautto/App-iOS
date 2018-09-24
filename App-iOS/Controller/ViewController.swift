@@ -65,6 +65,12 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         songName.text = selectedSong
+        func pulseButton(){
+            selectSongButton.pulsate()
+        }
+        
+        pulseButton()
+        
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
                 self.imgview.isHidden = false
