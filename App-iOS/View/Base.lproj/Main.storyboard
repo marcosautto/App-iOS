@@ -51,6 +51,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-QN-5vS">
+                                <rect key="frame" x="192" y="669" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pzt-Lc-dCJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -235,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="845"/>
         </scene>
-        <!--About Screen-->
+        <!--Player View Controller-->
         <scene sceneID="B8F-zb-D74">
             <objects>
-                <viewController id="4ba-25-xmz" customClass="aboutScreen" customModule="App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4ba-25-xmz" customClass="AVPlayerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Spx-pQ-B7u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

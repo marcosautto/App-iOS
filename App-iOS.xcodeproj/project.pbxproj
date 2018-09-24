@@ -35,7 +35,6 @@
 		640E8B6B2153F3560081078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640E8B712153F9050081078C /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		640E8B732153FA080081078C /* selectSongScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSongScreen.swift; sourceTree = "<group>"; };
-		6418660E2158D7DD001CDC0B /* aboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutScreen.swift; sourceTree = "<group>"; };
 		643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Lil Uzi Vert - XO Tour Llif3.mp3"; path = "App-iOS/App-iOS/Songs/Lil Uzi Vert - XO Tour Llif3.mp3"; sourceTree = SOURCE_ROOT; };
 		643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; path = "App-iOS/App-iOS/Songs/Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; sourceTree = SOURCE_ROOT; };
 		643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Buble - Moondance.mp3"; path = "App-iOS/App-iOS/Songs/Micheal Buble - Moondance.mp3"; sourceTree = SOURCE_ROOT; };
@@ -112,7 +111,6 @@
 				640E8B732153FA080081078C /* selectSongScreen.swift */,
 				640E8B612153F3550081078C /* ViewController.swift */,
 				640E8B712153F9050081078C /* settingsScreen.swift */,
-				6418660E2158D7DD001CDC0B /* aboutScreen.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,7 +210,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6418660F2158D7DD001CDC0B /* aboutScreen.swift in Sources */,
 				E14D02262154E7EA00464509 /* Extensions.swift in Sources */,
 				640E8B742153FA080081078C /* selectSongScreen.swift in Sources */,
 				640E8B722153F9050081078C /* settingsScreen.swift in Sources */,
