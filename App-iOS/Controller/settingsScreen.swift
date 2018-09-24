@@ -26,9 +26,11 @@ class settingsScreen: UITableViewController {
         self.title = "Settings"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
-        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.black
+        
+        self.mySwitch.onTintColor = UIColor.orange
         super.viewDidLoad()
     }
 
