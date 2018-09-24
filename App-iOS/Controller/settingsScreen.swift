@@ -32,7 +32,7 @@ class settingsScreen: UITableViewController {
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.black
         
-        self.themeSwitch.onTintColor = UIColor.orange
+//        self.mySwitch.onTintColor = UIColor.orange
         super.viewDidLoad()
     }
 

@@ -37,6 +37,8 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
+        self.view.backgroundColor = UIColor.black
+        
         view.addSubview(selectSongButton)
         
         func pulseButton(){
@@ -55,6 +57,13 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
+            if theme == "light" {
+                self.imgview.isHidden = false
+            } else {
+                self.imgview.isHidden = true
+        }
+    }
         
         self.navigationController?.navigationBar.isHidden = false
     }
