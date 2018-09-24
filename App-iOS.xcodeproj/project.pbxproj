@@ -11,11 +11,10 @@
 		640E8B602153F3550081078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B5F2153F3550081078C /* AppDelegate.swift */; };
 		640E8B622153F3550081078C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B612153F3550081078C /* ViewController.swift */; };
 		640E8B652153F3550081078C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B632153F3550081078C /* Main.storyboard */; };
-		640E8B672153F3560081078C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B662153F3560081078C /* Assets.xcassets */; };
 		640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B682153F3560081078C /* LaunchScreen.storyboard */; };
 		640E8B722153F9050081078C /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B712153F9050081078C /* settingsScreen.swift */; };
 		640E8B742153FA080081078C /* selectSongScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B732153FA080081078C /* selectSongScreen.swift */; };
-		6418660F2158D7DD001CDC0B /* aboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418660E2158D7DD001CDC0B /* aboutScreen.swift */; };
+		641866132158E691001CDC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641866122158E691001CDC0B /* Assets.xcassets */; };
 		643C448D2154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */; };
 		643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */; };
 		643C448F2154E63D00914068 /* Micheal Buble - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */; };
@@ -30,11 +29,11 @@
 		640E8B5F2153F3550081078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		640E8B612153F3550081078C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		640E8B642153F3550081078C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		640E8B662153F3560081078C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		640E8B692153F3560081078C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		640E8B6B2153F3560081078C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		640E8B712153F9050081078C /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		640E8B732153FA080081078C /* selectSongScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSongScreen.swift; sourceTree = "<group>"; };
+		641866122158E691001CDC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Lil Uzi Vert - XO Tour Llif3.mp3"; path = "App-iOS/App-iOS/Songs/Lil Uzi Vert - XO Tour Llif3.mp3"; sourceTree = SOURCE_ROOT; };
 		643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; path = "App-iOS/App-iOS/Songs/Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; sourceTree = SOURCE_ROOT; };
 		643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Buble - Moondance.mp3"; path = "App-iOS/App-iOS/Songs/Micheal Buble - Moondance.mp3"; sourceTree = SOURCE_ROOT; };
@@ -118,7 +117,7 @@
 		E14D02292154F78000464509 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				640E8B662153F3560081078C /* Assets.xcassets */,
+				641866122158E691001CDC0B /* Assets.xcassets */,
 				640E8B6B2153F3560081078C /* Info.plist */,
 			);
 			path = Other;
@@ -201,9 +200,9 @@
 				643C448D2154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */,
 				640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */,
 				643C44902154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 in Resources */,
-				640E8B672153F3560081078C /* Assets.xcassets in Resources */,
 				640E8B652153F3550081078C /* Main.storyboard in Resources */,
 				643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */,
+				641866132158E691001CDC0B /* Assets.xcassets in Resources */,
 				EE35EE3F2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
