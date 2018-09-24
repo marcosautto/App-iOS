@@ -25,12 +25,12 @@ class ViewController: UIViewController {
         if (audioPlayer.isPlaying)
         {
             audioPlayer.pause();
-            playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
+            playButton.setImage(UIImage(named: "Play.png"), for: .normal)
         }
         else
         {
             audioPlayer.play();
-            playButton.setImage(UIImage(named: "Play.png"), for: .normal)
+            playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
         }
     }
     
