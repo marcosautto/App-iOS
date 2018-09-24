@@ -29,6 +29,12 @@ class ViewController: UIViewController {
         
         view.addSubview(selectSongButton)
         
+        func pulseButton(){
+            selectSongButton.pulsate()
+        }
+        
+        pulseButton()
+        
         
         
         super.viewDidLoad()

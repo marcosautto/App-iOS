@@ -1,0 +1,27 @@
+//
+//  PulseAnimation.swift
+//  App-iOS
+//
+//  Created by Francesco Picone on 24/09/18.
+//  Copyright © 2018 musicaecoding. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension   UIButton {
+    
+    func pulsate() {
+        
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 10
+        pulse.fromValue = 0.97
+        pulse.toValue = 1.0
+        pulse.autoreverses = true
+        pulse.repeatCount = 100000
+        pulse.initialVelocity = 0.5
+        pulse.damping = 0.5
+        
+        layer.add(pulse, forKey: "pulse")
+    }
+}

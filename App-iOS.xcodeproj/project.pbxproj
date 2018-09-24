@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28E3367E2158D10B00703458 /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3367D2158D10B00703458 /* PulseAnimation.swift */; };
 		640E8B602153F3550081078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B5F2153F3550081078C /* AppDelegate.swift */; };
 		640E8B622153F3550081078C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B612153F3550081078C /* ViewController.swift */; };
 		640E8B652153F3550081078C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B632153F3550081078C /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28E3367D2158D10B00703458 /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		640E8B5C2153F3550081078C /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		640E8B5F2153F3550081078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		640E8B612153F3550081078C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		E14D02282154F77000464509 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				28E3367D2158D10B00703458 /* PulseAnimation.swift */,
 				640E8B732153FA080081078C /* selectSongScreen.swift */,
 				640E8B612153F3550081078C /* ViewController.swift */,
 				640E8B712153F9050081078C /* settingsScreen.swift */,
@@ -210,6 +213,7 @@
 				640E8B742153FA080081078C /* selectSongScreen.swift in Sources */,
 				640E8B722153F9050081078C /* settingsScreen.swift in Sources */,
 				640E8B622153F3550081078C /* ViewController.swift in Sources */,
+				28E3367E2158D10B00703458 /* PulseAnimation.swift in Sources */,
 				640E8B602153F3550081078C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
