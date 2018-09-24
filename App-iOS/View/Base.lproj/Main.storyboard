@@ -80,6 +80,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
+                        <outlet property="imgview" destination="RjE-Bx-qfT" id="Ksb-TW-3jz"/>
                         <outlet property="selectSongButton" destination="Nxa-Af-cyz" id="6ZZ-MH-dl3"/>
                         <outlet property="songListening" destination="sng-R9-afS" id="ua2-gx-WA6"/>
                         <outlet property="songName" destination="w3N-MD-gJh" id="XXo-DL-BmU"/>
