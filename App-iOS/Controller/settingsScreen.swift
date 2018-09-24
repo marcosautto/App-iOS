@@ -12,7 +12,7 @@ class settingsScreen: UITableViewController {
 
     @IBAction func nightModeSwitch(_ sender: Any) {
         //LUIGI CONTROLLA QUA
-        self.tableView.backgroundView.clear
+        self.tableView.backgroundView?.isHidden = true
     }
     
     override func viewDidLoad() {
