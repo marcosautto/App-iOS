@@ -10,15 +10,15 @@ import UIKit
 
 class settingsScreen: UITableViewController {
 
-    @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var themeSwitch: UISwitch!
     
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         if sender.isOn {
             self.tableView.backgroundView?.isHidden = true
-           self.navigationController?.navigationBar.tintColor = UIColor.orange
+            UserDefaults.standard.set("dark", forKey: "theme")
         } else {
             self.tableView.backgroundView?.isHidden = false
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+            UserDefaults.standard.set("light", forKey: "theme")
         }
     }
     
@@ -43,6 +43,15 @@ class settingsScreen: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-
+    override func viewWillAppear(_ animated: Bool) {
+        if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
+            if theme == "light" {
+                themeSwitch.isOn = false
+                nightModeSwitch(themeSwitch)
+            } else {
+                themeSwitch.isOn = true
+                nightModeSwitch(themeSwitch)
+            }
+        }
+    }
 }
