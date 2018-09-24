@@ -19,6 +19,7 @@
 		643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */; };
 		643C448F2154E63D00914068 /* Micheal Buble - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */; };
 		643C44902154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448C2154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 */; };
+		6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */; };
 		E14D02262154E7EA00464509 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D02252154E7EA00464509 /* Extensions.swift */; };
 		EE35EE3F2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; path = "App-iOS/App-iOS/Songs/Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; sourceTree = SOURCE_ROOT; };
 		643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Buble - Moondance.mp3"; path = "App-iOS/App-iOS/Songs/Micheal Buble - Moondance.mp3"; sourceTree = SOURCE_ROOT; };
 		643C448C2154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Travis Scott - Butterfly Effect.mp3"; path = "App-iOS/App-iOS/Songs/Travis Scott - Butterfly Effect.mp3"; sourceTree = SOURCE_ROOT; };
+		6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		E14D02252154E7EA00464509 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 		640E8B5E2153F3550081078C /* App-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6443B43A2158F26F002C0745 /* Fonts */,
 				E14D022A2154F78E00464509 /* Helpers */,
 				E14D02272154F75D00464509 /* View */,
 				E14D02282154F77000464509 /* Controller */,
@@ -92,6 +95,14 @@
 			);
 			name = Songs;
 			path = "App-iOS/Songs";
+			sourceTree = "<group>";
+		};
+		6443B43A2158F26F002C0745 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		E14D02272154F75D00464509 /* View */ = {
@@ -200,6 +211,7 @@
 				643C448D2154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */,
 				640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */,
 				643C44902154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 in Resources */,
+				6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */,
 				640E8B652153F3550081078C /* Main.storyboard in Resources */,
 				643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */,
 				641866152158EEFF001CDC0B /* Assets.xcassets in Resources */,
