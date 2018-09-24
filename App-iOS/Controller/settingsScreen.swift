@@ -13,8 +13,10 @@ class settingsScreen: UITableViewController {
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         if sender.isOn {
             self.tableView.backgroundView?.isHidden = true
+           self.navigationController?.navigationBar.tintColor = UIColor.orange
         } else {
             self.tableView.backgroundView?.isHidden = false
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         }
     }
     
@@ -22,7 +24,7 @@ class settingsScreen: UITableViewController {
         self.title = "Settings"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
-        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.black
         super.viewDidLoad()
