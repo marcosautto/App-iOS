@@ -13,10 +13,13 @@ import AVFoundation
 
 var songs: [String] = []
 var audioPlayer = AVAudioPlayer();
+var selectedSong: String!
 
 class selectSong: UITableViewController {
     
     override func viewDidLoad() {
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
+        self.tableView.separatorColor = UIColor.clear
         super.viewDidLoad()
         self.title = "Select a song"
         self.navigationController?.navigationBar.prefersLargeTitles = true
@@ -26,6 +29,10 @@ class selectSong: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        songs.removeAll()
     }
     
     // MARK: - Table view data source
@@ -43,6 +50,7 @@ class selectSong: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = songs[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
         return cell
     }
     
@@ -50,12 +58,14 @@ class selectSong: UITableViewController {
         do{
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
             try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            selectedSong = songs[indexPath.row]
             audioPlayer.play()
         }
         catch{
             print("Error")
         }
     }
+    
     
     
     func gettingSongsList()
@@ -86,9 +96,13 @@ class selectSong: UITableViewController {
         }
     }
     
-//    func play(for segue: UIStoryboardSegue, sender: Any?){
-//            if let songSelected{
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destVC = segue.destination as! ViewController
+        destVC.tapTo.isHidden = true
+        destVC.songListening.isHidden = false
+        destVC.songName.isHidden = false
+        destVC.songName.text = selectedSong
+    }
+    
     
 }
