@@ -30,8 +30,10 @@ class selectSong: UITableViewController {
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
                 self.tableView.backgroundView?.isHidden = false
+                self.navigationController?.navigationBar.tintColor = UIColor.white
             } else {
                 self.tableView.backgroundView?.isHidden = true
+                self.navigationController?.navigationBar.tintColor = UIColor.orange
             }
         }
         
