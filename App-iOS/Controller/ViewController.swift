@@ -17,6 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tapTo: UILabel!
     @IBOutlet weak var songListening: UILabel!
     @IBOutlet weak var songName: UILabel!
+    @IBAction func playPauseButton(_ sender: Any) {
+        if (audioPlayer.isPlaying)
+        {
+            audioPlayer.pause();
+        }
+        else
+        {
+            audioPlayer.play();
+        }
+    }
     
     override func viewDidLoad() {
         
@@ -26,6 +36,8 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
+        self.view.backgroundColor = UIColor.black
         
         view.addSubview(selectSongButton)
         
@@ -45,6 +57,13 @@ class ViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
+            if theme == "light" {
+                self.imgview.isHidden = false
+            } else {
+                self.imgview.isHidden = true
+        }
+    }
         
         self.navigationController?.navigationBar.isHidden = false
     }

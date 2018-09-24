@@ -15,9 +15,11 @@ class settingsScreen: UITableViewController {
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         if sender.isOn {
             self.tableView.backgroundView?.isHidden = true
+            self.navigationController?.navigationBar.tintColor = UIColor.orange
             UserDefaults.standard.set("dark", forKey: "theme")
         } else {
             self.tableView.backgroundView?.isHidden = false
+            self.navigationController?.navigationBar.tintColor = UIColor.white
             UserDefaults.standard.set("light", forKey: "theme")
         }
     }
@@ -30,7 +32,7 @@ class settingsScreen: UITableViewController {
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.black
         
-        self.themeSwitch.onTintColor = UIColor.orange
+//        self.mySwitch.onTintColor = UIColor.orange
         super.viewDidLoad()
     }
 

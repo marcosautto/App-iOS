@@ -20,9 +20,21 @@ class selectSong: UITableViewController {
     override func viewDidLoad() {
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
         self.tableView.separatorColor = UIColor.clear
-        super.viewDidLoad()
+        self.navigationController?.navigationBar.tintColor = UIColor.white
         self.title = "Select a song"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.tableView.backgroundColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+
+        
+        if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
+            if theme == "light" {
+                self.tableView.backgroundView?.isHidden = false
+            } else {
+                self.tableView.backgroundView?.isHidden = true
+            }
+        }
+        
         gettingSongsList()
     }
     
