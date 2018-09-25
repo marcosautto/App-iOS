@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,25 +28,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Now playing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-R9-afS">
-                                <rect key="frame" x="160" y="537" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="164.33333333333334" y="539.33333333333337" width="85.666666666666657" height="20"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3N-MD-gJh">
-                                <rect key="frame" x="20" y="566" width="374" height="21.666666666666629"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="20" y="567.33333333333337" width="374" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to select a song" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsC-vd-h6h">
-                                <rect key="frame" x="130" y="440" width="154" height="20.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="138.66666666666666" y="440" width="136.99999999999997" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-QN-5vS">
-                                <rect key="frame" x="167.66666666666663" y="607" width="79" height="79"/>
+                                <rect key="frame" x="167.66666666666666" y="607" width="79" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="79" id="Kwu-r6-CaX"/>
                                     <constraint firstAttribute="height" constant="79" id="er7-vb-q1g"/>
@@ -196,7 +201,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="4ba-25-xmz" kind="show" id="fIF-Qa-gZO"/>
+                                            <segue destination="diY-I9-ttS" kind="show" id="wJk-VN-olz"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -208,12 +213,29 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="flashlightSwitch" destination="YIA-Ac-4D0" id="UiC-xr-uVV"/>
+                        <outlet property="nightModeSwitch" destination="c7A-m0-9UI" id="rJd-J9-9Wr"/>
                         <outlet property="themeSwitch" destination="c7A-m0-9UI" id="nZq-V7-jNe"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3B-au-AsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1786" y="134"/>
+        </scene>
+        <!--About Screen-->
+        <scene sceneID="ejJ-FY-oMS">
+            <objects>
+                <viewController id="diY-I9-ttS" customClass="aboutScreen" customModule="App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OSF-1M-f7E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yDN-tL-3Se"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jh-tS-Y20" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1786" y="845"/>
         </scene>
         <!--Select Song-->
         <scene sceneID="k4D-c8-NGT">
@@ -253,108 +275,6 @@
                 <exit id="eJX-M7-5ne" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1076" y="845"/>
-        </scene>
-        <!--Player View Controller-->
-        <scene sceneID="B8F-zb-D74">
-            <objects>
-                <viewController id="4ba-25-xmz" customClass="AVPlayerViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Spx-pQ-B7u">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="center" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Mxm-JV-O0O">
-                                <rect key="frame" x="28.666666666666742" y="116" width="356.66666666666674" height="255.33333333333337"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Developed by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTC-a6-ue9">
-                                        <rect key="frame" x="0.0" y="0.0" width="356.66666666666669" height="25.333333333333332"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Andrea Lombardi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnK-iV-GTL">
-                                        <rect key="frame" x="0.0" y="38.333333333333343" width="356.66666666666669" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Francesco Picone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxj-Z4-SvE">
-                                        <rect key="frame" x="0.0" y="71.666666666666657" width="356.66666666666669" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Luigi Borchia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBN-cs-GVO">
-                                        <rect key="frame" x="0.0" y="105" width="356.66666666666669" height="20.333333333333329"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Luca Esposito Pietrafitta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfu-gG-mSj">
-                                        <rect key="frame" x="0.0" y="138.33333333333334" width="356.66666666666669" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Vincenzo Marco Rodriguez De La Suerte Maria De Luca" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIq-GB-YBi">
-                                        <rect key="frame" x="0.0" y="171.66666666666669" width="356.66666666666669" height="17"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco Sautto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUx-Z2-zfB">
-                                        <rect key="frame" x="0.0" y="201.66666666666669" width="356.66666666666669" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Vincenzo Silvio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92r-k6-nSg">
-                                        <rect key="frame" x="0.0" y="235" width="356.66666666666669" height="20.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="92r-k6-nSg" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="4da-VN-ii9"/>
-                                    <constraint firstItem="mBN-cs-GVO" firstAttribute="top" secondItem="dxj-Z4-SvE" secondAttribute="bottom" constant="13" id="6YM-ws-sqP"/>
-                                    <constraint firstAttribute="trailing" secondItem="cnK-iV-GTL" secondAttribute="trailing" id="Akx-Tl-Yo2"/>
-                                    <constraint firstItem="CTC-a6-ue9" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="Aqk-gY-pUY"/>
-                                    <constraint firstAttribute="trailing" secondItem="CTC-a6-ue9" secondAttribute="trailing" id="CEi-z7-ppq"/>
-                                    <constraint firstItem="tIq-GB-YBi" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="Era-ap-jm7"/>
-                                    <constraint firstItem="xUx-Z2-zfB" firstAttribute="top" secondItem="tIq-GB-YBi" secondAttribute="bottom" constant="13" id="FxR-DM-1be"/>
-                                    <constraint firstItem="cnK-iV-GTL" firstAttribute="top" secondItem="CTC-a6-ue9" secondAttribute="bottom" constant="13" id="H2A-pm-fqo"/>
-                                    <constraint firstAttribute="width" constant="356.67000000000002" id="IBA-LB-Mgg"/>
-                                    <constraint firstAttribute="height" constant="255.33000000000001" id="IgH-3U-dmu"/>
-                                    <constraint firstItem="mBN-cs-GVO" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="Ixh-Pz-q6x"/>
-                                    <constraint firstAttribute="trailing" secondItem="92r-k6-nSg" secondAttribute="trailing" id="QXJ-3u-Oi1"/>
-                                    <constraint firstItem="Dfu-gG-mSj" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="SGG-dp-Ga3"/>
-                                    <constraint firstItem="xUx-Z2-zfB" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="SQJ-SJ-YOh"/>
-                                    <constraint firstItem="dxj-Z4-SvE" firstAttribute="top" secondItem="cnK-iV-GTL" secondAttribute="bottom" constant="13" id="YCt-QB-wDT"/>
-                                    <constraint firstItem="Dfu-gG-mSj" firstAttribute="top" secondItem="mBN-cs-GVO" secondAttribute="bottom" constant="13" id="YsT-Ds-OzC"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dfu-gG-mSj" secondAttribute="trailing" id="cgG-t7-385"/>
-                                    <constraint firstItem="cnK-iV-GTL" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="f0z-QP-vQo"/>
-                                    <constraint firstAttribute="trailing" secondItem="xUx-Z2-zfB" secondAttribute="trailing" id="fVz-8N-GNf"/>
-                                    <constraint firstAttribute="trailing" secondItem="dxj-Z4-SvE" secondAttribute="trailing" id="iHA-bm-SpT"/>
-                                    <constraint firstAttribute="trailing" secondItem="mBN-cs-GVO" secondAttribute="trailing" id="iLg-ZW-uDS"/>
-                                    <constraint firstItem="92r-k6-nSg" firstAttribute="top" secondItem="xUx-Z2-zfB" secondAttribute="bottom" constant="13" id="l7F-eJ-w3l"/>
-                                    <constraint firstAttribute="trailing" secondItem="tIq-GB-YBi" secondAttribute="trailing" id="nAC-zC-F2a"/>
-                                    <constraint firstItem="CTC-a6-ue9" firstAttribute="top" secondItem="Mxm-JV-O0O" secondAttribute="top" id="tQQ-db-ORD"/>
-                                    <constraint firstItem="dxj-Z4-SvE" firstAttribute="leading" secondItem="Mxm-JV-O0O" secondAttribute="leading" id="w0k-nH-Yly"/>
-                                    <constraint firstItem="tIq-GB-YBi" firstAttribute="top" secondItem="Dfu-gG-mSj" secondAttribute="bottom" constant="13" id="xTm-0o-Bky"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Mxm-JV-O0O" firstAttribute="top" secondItem="RsY-jb-kgS" secondAttribute="top" constant="52" id="BcM-yx-das"/>
-                            <constraint firstItem="Mxm-JV-O0O" firstAttribute="centerX" secondItem="Spx-pQ-B7u" secondAttribute="centerX" id="PXb-xY-bjO"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="RsY-jb-kgS"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="73t-cK-vgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1784.057971014493" y="845.38043478260875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ota-oA-bnc">

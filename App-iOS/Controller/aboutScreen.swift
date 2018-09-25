@@ -8,14 +8,30 @@
 
 import UIKit
 
-class aboutScreen: UIView {
+class aboutScreen: UIViewController {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override func viewDidLoad() {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.title = "About"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        super.viewDidLoad()
     }
-    */
-
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//
+//        if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
+//            if theme == "light" {
+//                self.imgview.isHidden = false
+//            } else {                                //Night Mode
+//                self.imgview.isHidden = true
+//            }
+//        }
+//
+//        self.navigationController?.navigationBar.isHidden = false
+//    }
+    
+    
 }
