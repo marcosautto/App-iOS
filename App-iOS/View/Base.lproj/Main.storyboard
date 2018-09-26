@@ -69,6 +69,20 @@
                                     <segue destination="Kij-3x-soM" kind="show" id="hKD-1p-23I"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIB-Op-N8Z">
+                                <rect key="frame" x="105" y="378" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGB-P0-wvd">
+                                <rect key="frame" x="263" y="378" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -96,6 +110,8 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
+                        <outlet property="amp" destination="JGB-P0-wvd" id="ciQ-tI-cBZ"/>
+                        <outlet property="freq" destination="PIB-Op-N8Z" id="I8r-A7-f7A"/>
                         <outlet property="imgview" destination="RjE-Bx-qfT" id="Ksb-TW-3jz"/>
                         <outlet property="playButton" destination="rcm-QN-5vS" id="ecx-V5-oUH"/>
                         <outlet property="selectSongButton" destination="Nxa-Af-cyz" id="6ZZ-MH-dl3"/>
@@ -297,8 +313,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="1511" height="1511"/>
-        <image name="Pause" width="33" height="33"/>
+        <image name="Logo" width="362.6400146484375" height="362.6400146484375"/>
+        <image name="Pause" width="33.333332061767578" height="33.333332061767578"/>
         <image name="gear2" width="51" height="51"/>
         <image name="gradiente" width="751" height="1335"/>
     </resources>

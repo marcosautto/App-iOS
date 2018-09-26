@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import AVFoundation
-
+import AudioKit
 
 
 var songs: [String] = []
-var audioPlayer = AVAudioPlayer();
-var selectedSong: String!
+var selectedSong: String! = ""
+
 
 class selectSong: UITableViewController {
     
@@ -25,7 +24,7 @@ class selectSong: UITableViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.backgroundColor = UIColor.black
         self.navigationController?.navigationBar.tintColor = UIColor.white
-
+        
         
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
@@ -55,7 +54,7 @@ class selectSong: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return (songs.count)
@@ -71,9 +70,8 @@ class selectSong: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         do{
             let audioPath = Bundle.main.path(forResource: songs[indexPath.row], ofType: ".mp3")
-            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
+            //            try audioPlayer = AVAudioPlayer(contentsOf: NSURL(fileURLWithPath: audioPath!) as URL)
             selectedSong = songs[indexPath.row]
-            audioPlayer.play()
         }
         catch{
             print("Error")
@@ -118,7 +116,7 @@ class selectSong: UITableViewController {
         destVC.songName.text = selectedSong
         destVC.playButton.isHidden = false
         destVC.playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
+        
     }
-    
     
 }

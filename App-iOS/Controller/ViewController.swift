@@ -7,7 +7,10 @@
 //
 
 import UIKit
-
+import AudioKit
+var player = AKPlayer(audioFile: file)
+var file = try! AKAudioFile(readFileName: selectedSong+".mp3")
+var tracker = AKFrequencyTracker(player)
 
 
 class ViewController: UIViewController {
@@ -20,6 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var songListening: UILabel!
     @IBOutlet weak var songName: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var freq: UILabel!
+    @IBOutlet weak var amp: UILabel!
     
     @IBAction func playPauseButton(_ sender: Any) {
         
@@ -31,19 +36,21 @@ class ViewController: UIViewController {
             selectSongButton.pulsateStop()
         }
         
-        if (audioPlayer.isPlaying)
+        if player.isPlaying
         {
-            audioPlayer.pause();
+            player.pause()
             playButton.setImage(UIImage(named: "Play.png"), for: .normal)
             pulseStop()
             
         }
         else
         {
-            audioPlayer.play();
+            player.play();
+            akplay()
             playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
             pulse()
         }
+        
     }
     
     override func viewDidLoad() {
@@ -68,9 +75,106 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    func akplay(){
+        file = try! AKAudioFile(readFileName: selectedSong+".mp3")
+        player = AKPlayer(audioFile: file)
+        player.isLooping = true
+        player.buffering = .always
+        tracker = AKFrequencyTracker(player)
         
-        songName.text = selectedSong;
+        AudioKit.output = tracker
+        try! AudioKit.start()
+        player.play()
+        
+        AKPlaygroundLoop(every: 0.1){
+            let frequency = tracker.frequency
+            let amplitude = tracker.amplitude
+            //            String(format: "%.2f", frequency)
+            self.freq.text = "\(String(format: "%.3f", frequency))"
+            self.amp.text = "\(String(format: "%.3f", amplitude))"
+            
+            if player.isPlaying{
+                switch(Int(tracker.frequency)){
+                case 30...90:
+                    Vibration.selection.vibrate()
+                case 91...140:
+                    Vibration.light.vibrate()
+                case 141...190:
+                    Vibration.warning.vibrate()
+                case 191...210:
+                    Vibration.heavy.vibrate()
+                case 211...260:
+                    Vibration.medium.vibrate()
+                case 261...300:
+                    Vibration.error.vibrate()
+                case 301...340:
+                    Vibration.success.vibrate()
+                case 341...100000:
+                    Vibration.medium.vibrate()
+                    
+                default:
+                    break
+                }
+            }
+        }
+    }
+    
+    enum Vibration {
+        case error
+        case success
+        case warning
+        case light
+        case medium
+        case heavy
+        case selection
+        case oldSchool
+        
+        func vibrate() {
+            
+            switch self {
+            case .error:
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
+                
+            case .success:
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+                
+            case .warning:
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.warning)
+                
+            case .light:
+                let generator = UIImpactFeedbackGenerator(style: .light)
+                generator.impactOccurred()
+                
+            case .medium:
+                let generator = UIImpactFeedbackGenerator(style: .medium)
+                generator.impactOccurred()
+                
+            case .heavy:
+                let generator = UIImpactFeedbackGenerator(style: .heavy)
+                generator.impactOccurred()
+                
+            case .selection:
+                let generator = UISelectionFeedbackGenerator()
+                generator.selectionChanged()
+                
+            case .oldSchool:
+                AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            }
+            
+        }
+        
+        
+    }//END ENUM
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if selectedSong != ""{
+            akplay()
+            songName.text = selectedSong;
+        }
+        
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
             if theme == "light" {
                 self.imgview.isHidden = false
@@ -80,10 +184,13 @@ class ViewController: UIViewController {
                 self.imgview.isHidden = true
                 songListening.textColor = UIColor.orange
                 tapTo.textColor = UIColor.orange
+            }
+            
+            
         }
-    }
         
         self.navigationController?.navigationBar.isHidden = false
+        
     }
     
     @IBAction func unwind(_ sender: UIStoryboardSegue){
@@ -92,6 +199,6 @@ class ViewController: UIViewController {
         }
         pulse()
     }
-
+    
 }
 

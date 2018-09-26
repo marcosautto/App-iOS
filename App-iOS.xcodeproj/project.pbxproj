@@ -22,6 +22,7 @@
 		6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */; };
 		6443B4402159401D002C0745 /* aboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443B43F2159401D002C0745 /* aboutScreen.swift */; };
 		E14D02262154E7EA00464509 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D02252154E7EA00464509 /* Extensions.swift */; };
+		E1FFC6B0215B8D430083A212 /* AKPlaygroundLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFC6AF215B8D430083A212 /* AKPlaygroundLoop.swift */; };
 		EE35EE3F2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		6443B43F2159401D002C0745 /* aboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutScreen.swift; sourceTree = "<group>"; };
 		E14D02252154E7EA00464509 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E1FFC6AF215B8D430083A212 /* AKPlaygroundLoop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AKPlaygroundLoop.swift; path = ../../../../Desktop/AKPlaygroundLoop.swift; sourceTree = "<group>"; };
 		EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 		E14D022A2154F78E00464509 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E1FFC6AF215B8D430083A212 /* AKPlaygroundLoop.swift */,
 				E14D02252154E7EA00464509 /* Extensions.swift */,
 				640E8B5F2153F3550081078C /* AppDelegate.swift */,
 			);
@@ -233,6 +236,7 @@
 				640E8B742153FA080081078C /* selectSongScreen.swift in Sources */,
 				640E8B722153F9050081078C /* settingsScreen.swift in Sources */,
 				640E8B622153F3550081078C /* ViewController.swift in Sources */,
+				E1FFC6B0215B8D430083A212 /* AKPlaygroundLoop.swift in Sources */,
 				28E3367E2158D10B00703458 /* PulseAnimation.swift in Sources */,
 				640E8B602153F3550081078C /* AppDelegate.swift in Sources */,
 				6443B4402159401D002C0745 /* aboutScreen.swift in Sources */,
