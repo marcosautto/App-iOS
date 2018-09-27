@@ -245,13 +245,103 @@
                     <view key="view" contentMode="scaleToFill" id="OSF-1M-f7E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradiente" translatesAutoresizingMaskIntoConstraints="NO" id="Hgj-dq-Nyj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXQ-pI-DJJ">
+                                <rect key="frame" x="127" y="184" width="160" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrea Lombardi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-NT-0OK">
+                                <rect key="frame" x="129" y="229" width="156" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luigi Borchia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVX-WG-32j">
+                                <rect key="frame" x="148" y="303" width="118" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luca Esposito Pietrafitta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9a-se-fOt">
+                                <rect key="frame" x="97" y="340" width="220" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincenzo Marco Rodriguez De La Suerte Maria De Luca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNs-g0-m0F">
+                                <rect key="frame" x="17.666666666666657" y="377" width="379" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco Sautto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULU-QJ-aBT">
+                                <rect key="frame" x="146" y="406" width="122" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincenzo Silvio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ku-05-9Bn">
+                                <rect key="frame" x="138" y="443" width="138" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco Conte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTt-gK-fI1">
+                                <rect key="frame" x="148.66666666666666" y="480" width="116.99999999999997" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Francesco Picone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcO-a9-xIe">
+                                <rect key="frame" x="126" y="266" width="162" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Ku-05-9Bn" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="10p-dV-Jga"/>
+                            <constraint firstItem="rNs-g0-m0F" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="2Ta-T6-FSp"/>
+                            <constraint firstItem="Jk0-NT-0OK" firstAttribute="top" secondItem="gXQ-pI-DJJ" secondAttribute="bottom" constant="15" id="2kv-9d-R83"/>
+                            <constraint firstItem="b9a-se-fOt" firstAttribute="top" secondItem="RVX-WG-32j" secondAttribute="bottom" constant="11" id="2vQ-Mj-KNH"/>
+                            <constraint firstItem="gXQ-pI-DJJ" firstAttribute="top" secondItem="yDN-tL-3Se" secondAttribute="top" constant="120" id="3oh-9W-goB"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="trailing" secondItem="yDN-tL-3Se" secondAttribute="trailing" id="4dY-WY-KYn"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="trailing" secondItem="yDN-tL-3Se" secondAttribute="trailing" id="5OA-DY-hKZ"/>
+                            <constraint firstItem="ULU-QJ-aBT" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="8ct-gL-s87"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="bottom" secondItem="yDN-tL-3Se" secondAttribute="bottom" id="A8v-Oo-cB9"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="top" secondItem="OSF-1M-f7E" secondAttribute="top" id="FNn-Ci-WtV"/>
+                            <constraint firstItem="b9a-se-fOt" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="Hku-ra-qiB"/>
+                            <constraint firstItem="RVX-WG-32j" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="Ie0-Ln-xRB"/>
+                            <constraint firstItem="ULU-QJ-aBT" firstAttribute="top" secondItem="rNs-g0-m0F" secondAttribute="bottom" constant="11" id="OZU-mY-rV9"/>
+                            <constraint firstItem="Jk0-NT-0OK" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="Prr-5W-XMs"/>
+                            <constraint firstItem="2Ku-05-9Bn" firstAttribute="top" secondItem="ULU-QJ-aBT" secondAttribute="bottom" constant="11" id="Uuu-dr-X8C"/>
+                            <constraint firstItem="rNs-g0-m0F" firstAttribute="top" secondItem="b9a-se-fOt" secondAttribute="bottom" constant="11" id="ZQf-YR-ZTw"/>
+                            <constraint firstItem="bcO-a9-xIe" firstAttribute="top" secondItem="Jk0-NT-0OK" secondAttribute="bottom" constant="11" id="ZiL-hR-tJb"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="bottom" secondItem="yDN-tL-3Se" secondAttribute="bottom" id="ZrO-P5-t8j"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="leading" secondItem="yDN-tL-3Se" secondAttribute="leading" id="a9e-Oc-wrz"/>
+                            <constraint firstItem="oTt-gK-fI1" firstAttribute="top" secondItem="2Ku-05-9Bn" secondAttribute="bottom" constant="11" id="elu-4f-YWG"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="top" secondItem="OSF-1M-f7E" secondAttribute="top" id="fJe-Ho-vsF"/>
+                            <constraint firstItem="gXQ-pI-DJJ" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="k9B-uB-T83"/>
+                            <constraint firstItem="bcO-a9-xIe" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="lQA-Ru-Vtt"/>
+                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="leading" secondItem="yDN-tL-3Se" secondAttribute="leading" id="nBu-3s-ieD"/>
+                            <constraint firstItem="RVX-WG-32j" firstAttribute="top" secondItem="bcO-a9-xIe" secondAttribute="bottom" constant="11" id="rCf-1j-Odc"/>
+                            <constraint firstItem="oTt-gK-fI1" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="s22-2e-pf8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yDN-tL-3Se"/>
                     </view>
+                    <connections>
+                        <outlet property="imgview" destination="Hgj-dq-Nyj" id="8Gy-jh-Oza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Jh-tS-Y20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="845"/>
+            <point key="canvasLocation" x="1785.5072463768117" y="844.56521739130437"/>
         </scene>
         <!--Select Song-->
         <scene sceneID="k4D-c8-NGT">
