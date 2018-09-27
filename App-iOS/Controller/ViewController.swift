@@ -45,8 +45,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            player.play();
-            akplay()
+            player.resume();
             playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
             pulse()
         }
