@@ -56,7 +56,7 @@ class settingsScreen: UITableViewController {
             self.nightModeSwitch.onTintColor = UIColor.orange
             self.flashlightIcon.image = UIImage(named: "FlashlightNight")
             self.nightModeIcon.image = UIImage(named: "NightModeNight")
-            self.aboutIcon.image = UIImage(named: "AboutNight")
+            self.aboutIcon.image = UIImage(named: "AboutIconNight")
         } else {
             self.tableView.backgroundView?.isHidden = false
             self.navigationController?.navigationBar.tintColor = UIColor.white
@@ -65,7 +65,7 @@ class settingsScreen: UITableViewController {
             self.nightModeSwitch.onTintColor = UIColor.cyan
             self.flashlightIcon.image = UIImage(named: "Flashlight")
             self.nightModeIcon.image = UIImage(named: "NightMode")
-            self.aboutIcon.image = UIImage(named: "About")
+            self.aboutIcon.image = UIImage(named: "AboutIcon")
         }
     }
     
