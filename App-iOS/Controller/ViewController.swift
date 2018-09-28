@@ -104,7 +104,7 @@ class ViewController: UIViewController {
             amplitude = tracker.amplitude
             
             self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
-            
+            self.songLength.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.duration))
             
             //            String(format: "%.2f", frequency)
             self.freq.text = "\(String(format: "%.3f", frequency))"
