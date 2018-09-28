@@ -7,12 +7,45 @@
 //
 
 import UIKit
+import AVKit
 
 class settingsScreen: UITableViewController {
-
+    
     @IBOutlet weak var themeSwitch: UISwitch!
     @IBOutlet weak var flashlightSwitch: UISwitch!
+    @IBOutlet weak var flashlightIcon: UIImageView!
     @IBOutlet weak var nightModeSwitch: UISwitch!
+    @IBOutlet weak var nightModeIcon: UIImageView!
+    @IBOutlet weak var aboutIcon: UIImageView!
+    
+    //FUNCTION PER LA TORCIA
+    func toggleTorch(on: Bool) {
+        guard let device = AVCaptureDevice.default(for: .video) else { return }
+        
+        if device.hasTorch {
+            do {
+                try device.lockForConfiguration()
+                
+                if on == true {
+                    device.torchMode = .on
+                } else {
+                    device.torchMode = .off
+                }
+                
+                device.unlockForConfiguration()
+            } catch {
+                print("Torch could not be used")
+            }
+        } else {
+            print("Torch is not available")
+        }
+    }
+    //END FUNC TORCH
+    
+    @IBAction func torchSwitch(_ sender: UISwitch) {
+        //ROBA
+    }
+    
     
     @IBAction func nightModeSwitch(_ sender: UISwitch) {
         if sender.isOn {
@@ -21,14 +54,22 @@ class settingsScreen: UITableViewController {
             UserDefaults.standard.set("dark", forKey: "theme")
             self.flashlightSwitch.onTintColor = UIColor.orange
             self.nightModeSwitch.onTintColor = UIColor.orange
+            self.flashlightIcon.image = UIImage(named: "FlashlightNight")
+            self.nightModeIcon.image = UIImage(named: "NightModeNight")
+            //self.aboutIcon.image = UIImage(named: "AboutNight")
         } else {
             self.tableView.backgroundView?.isHidden = false
             self.navigationController?.navigationBar.tintColor = UIColor.white
             UserDefaults.standard.set("light", forKey: "theme")
             self.flashlightSwitch.onTintColor = UIColor.cyan
             self.nightModeSwitch.onTintColor = UIColor.cyan
+            self.flashlightIcon.image = UIImage(named: "Flashlight")
+            self.nightModeIcon.image = UIImage(named: "NightMode")
+            //self.aboutIcon.image = UIImage(named: "About")
         }
     }
+    
+    
     
     override func viewDidLoad() {
         self.title = "Settings"
@@ -38,10 +79,10 @@ class settingsScreen: UITableViewController {
         self.tableView.separatorColor = UIColor.clear
         self.tableView.backgroundColor = UIColor.black
         
-//        self.mySwitch.onTintColor = UIColor.orange
+        //        self.mySwitch.onTintColor = UIColor.orange
         super.viewDidLoad()
     }
-
+    
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.backgroundColor = UIColor.clear
     }

@@ -11,7 +11,8 @@ import AudioKit
 var player = AKPlayer(audioFile: file)
 var file = try! AKAudioFile(readFileName: selectedSong+".mp3")
 var tracker = AKFrequencyTracker(player)
-
+var frequency = 0.0
+var amplitude = 0.0
 
 class ViewController: UIViewController {
     
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var freq: UILabel!
     @IBOutlet weak var amp: UILabel!
+    @IBOutlet weak var songTiming: UILabel!
+    @IBOutlet weak var songLenght: UILabel!
     
     @IBAction func playPauseButton(_ sender: Any) {
         
@@ -65,9 +68,14 @@ class ViewController: UIViewController {
         
         view.addSubview(selectSongButton)
         
+        //Animazione tapTo
+        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0.0, options: [], animations: {
+            self.tapTo.center = CGPoint(x: 250, y:40 - 500)
+        }, completion: nil)
         
         super.viewDidLoad()
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,8 +83,13 @@ class ViewController: UIViewController {
     }
     
     func akplay(){
+        
+        AKSettings.playbackWhileMuted = true //BACKGROUND MODE CODE
+        
         file = try! AKAudioFile(readFileName: selectedSong+".mp3")
+        player.detach()
         player = AKPlayer(audioFile: file)
+        
         player.isLooping = true
         player.buffering = .always
         tracker = AKFrequencyTracker(player)
@@ -84,10 +97,15 @@ class ViewController: UIViewController {
         AudioKit.output = tracker
         try! AudioKit.start()
         player.play()
-        
-        AKPlaygroundLoop(every: 0.1){
-            let frequency = tracker.frequency
-            let amplitude = tracker.amplitude
+        selectedSong = ""
+        AKPlaygroundLoop(every: 0.01){
+            
+            frequency = tracker.frequency
+            amplitude = tracker.amplitude
+            
+            self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
+            
+            
             //            String(format: "%.2f", frequency)
             self.freq.text = "\(String(format: "%.3f", frequency))"
             self.amp.text = "\(String(format: "%.3f", amplitude))"
@@ -169,9 +187,10 @@ class ViewController: UIViewController {
     }//END ENUM
     
     override func viewWillAppear(_ animated: Bool) {
+        
         if selectedSong != ""{
             akplay()
-            songName.text = selectedSong;
+            songName.text = selectedSongLabel;
         }
         
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {

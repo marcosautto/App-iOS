@@ -152,6 +152,9 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YIA-Ac-4D0">
                                                     <rect key="frame" x="345" y="7" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="torchSwitch:" destination="6ke-Jj-LJz" eventType="valueChanged" id="rEU-5b-03a"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -403,8 +406,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="362.6400146484375" height="362.6400146484375"/>
-        <image name="Pause" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Logo" width="1511" height="1511"/>
+        <image name="Pause" width="33" height="33"/>
         <image name="gear2" width="51" height="51"/>
         <image name="gradiente" width="751" height="1335"/>
     </resources>
