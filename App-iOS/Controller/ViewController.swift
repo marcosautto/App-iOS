@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var freq: UILabel!
     @IBOutlet weak var amp: UILabel!
     @IBOutlet weak var songTiming: UILabel!
-    @IBOutlet weak var songLenght: UILabel!
     
+    @IBOutlet weak var songLength: UILabel!
     @IBAction func playPauseButton(_ sender: Any) {
         
         func pulse(){

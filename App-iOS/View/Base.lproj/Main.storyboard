@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
         <array key="SF-Pro-Display-Light.otf">
             <string>SFProDisplay-Light</string>
         </array>
@@ -28,8 +31,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Now playing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sng-R9-afS">
-                                <rect key="frame" x="164.33333333333334" y="539.33333333333337" width="85.666666666666657" height="20"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="17"/>
+                                <rect key="frame" x="159.33333333333334" y="539" width="95.333333333333343" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -83,17 +86,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTg-tQ-wpA">
+                                <rect key="frame" x="294.66666666666669" y="636" width="43" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMP-eJ-Fa3">
+                                <rect key="frame" x="76.666666666666671" y="636" width="43" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="rcm-QN-5vS" firstAttribute="top" secondItem="w3N-MD-gJh" secondAttribute="bottom" constant="19.329999999999998" id="7RZ-uu-mOy"/>
+                            <constraint firstItem="rcm-QN-5vS" firstAttribute="leading" secondItem="sMP-eJ-Fa3" secondAttribute="trailing" constant="48" id="9ON-Ax-jjf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3N-MD-gJh" secondAttribute="trailing" constant="20" id="BrT-jL-F6r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rcm-QN-5vS" secondAttribute="bottom" constant="50" id="Fm4-JE-zx9"/>
                             <constraint firstItem="w3N-MD-gJh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GHN-gP-OzW"/>
                             <constraint firstItem="tsC-vd-h6h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LVv-Tc-D9s"/>
+                            <constraint firstItem="pTg-tQ-wpA" firstAttribute="top" secondItem="w3N-MD-gJh" secondAttribute="bottom" constant="48.329999999999998" id="RuD-7d-iIn"/>
+                            <constraint firstItem="sMP-eJ-Fa3" firstAttribute="top" secondItem="w3N-MD-gJh" secondAttribute="bottom" constant="48.329999999999998" id="UBn-aN-bKP"/>
                             <constraint firstItem="rcm-QN-5vS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VVW-Z3-6aV"/>
                             <constraint firstItem="tsC-vd-h6h" firstAttribute="top" secondItem="Nxa-Af-cyz" secondAttribute="bottom" constant="70" id="anK-tw-YqR"/>
                             <constraint firstItem="Nxa-Af-cyz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="az1-55-07U"/>
+                            <constraint firstItem="pTg-tQ-wpA" firstAttribute="leading" secondItem="rcm-QN-5vS" secondAttribute="trailing" constant="48" id="isH-dS-eNl"/>
                             <constraint firstItem="sng-R9-afS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ivD-NL-ZQb"/>
                             <constraint firstItem="Nxa-Af-cyz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="mQv-G7-dgp"/>
                             <constraint firstItem="w3N-MD-gJh" firstAttribute="top" secondItem="sng-R9-afS" secondAttribute="bottom" constant="8" id="ylc-I1-4Cx"/>
@@ -101,7 +120,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="BpY-P8-UcB">
-                        <barButtonItem key="rightBarButtonItem" image="gear2" id="YYa-VE-Yy5">
+                        <barButtonItem key="rightBarButtonItem" image="gear" id="YYa-VE-Yy5">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="6ke-Jj-LJz" kind="show" id="sRX-49-MUv"/>
@@ -110,13 +129,15 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <connections>
-                        <outlet property="amp" destination="JGB-P0-wvd" id="ciQ-tI-cBZ"/>
+                        <outlet property="amp" destination="sMP-eJ-Fa3" id="s7B-jL-MwE"/>
                         <outlet property="freq" destination="PIB-Op-N8Z" id="I8r-A7-f7A"/>
                         <outlet property="imgview" destination="RjE-Bx-qfT" id="Ksb-TW-3jz"/>
                         <outlet property="playButton" destination="rcm-QN-5vS" id="ecx-V5-oUH"/>
                         <outlet property="selectSongButton" destination="Nxa-Af-cyz" id="6ZZ-MH-dl3"/>
+                        <outlet property="songLength" destination="pTg-tQ-wpA" id="lni-Aa-Tdo"/>
                         <outlet property="songListening" destination="sng-R9-afS" id="ua2-gx-WA6"/>
                         <outlet property="songName" destination="w3N-MD-gJh" id="XXo-DL-BmU"/>
+                        <outlet property="songTiming" destination="sMP-eJ-Fa3" id="jvJ-nG-myo"/>
                         <outlet property="tapTo" destination="tsC-vd-h6h" id="LvK-Sa-h06"/>
                     </connections>
                 </viewController>
@@ -144,7 +165,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use flashlight while playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mM-Ok-NCl">
-                                                    <rect key="frame" x="16" y="12" width="208" height="21"/>
+                                                    <rect key="frame" x="100" y="12" width="208" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,6 +177,10 @@
                                                         <action selector="torchSwitch:" destination="6ke-Jj-LJz" eventType="valueChanged" id="rEU-5b-03a"/>
                                                     </connections>
                                                 </switch>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flashlight" translatesAutoresizingMaskIntoConstraints="NO" id="bN5-Wa-0aa">
+                                                    <rect key="frame" x="20" y="4" width="37" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -174,7 +199,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Night Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZc-St-Ieu">
-                                                    <rect key="frame" x="16" y="11" width="90" height="21"/>
+                                                    <rect key="frame" x="102" y="11" width="90" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,6 +211,10 @@
                                                         <action selector="nightModeSwitch:" destination="6ke-Jj-LJz" eventType="valueChanged" id="esr-dp-jRi"/>
                                                     </connections>
                                                 </switch>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NightMode" translatesAutoresizingMaskIntoConstraints="NO" id="H7y-C0-oMJ">
+                                                    <rect key="frame" x="20" y="4" width="37" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,12 +237,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-7a-Tob">
-                                                    <rect key="frame" x="16" y="11" width="47" height="21"/>
+                                                    <rect key="frame" x="101" y="12" width="47" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AboutIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Krb-R2-zqi">
+                                                    <rect key="frame" x="20" y="4" width="37" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -232,14 +265,17 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="aboutIcon" destination="Krb-R2-zqi" id="eRy-fT-T3f"/>
+                        <outlet property="flashlightIcon" destination="bN5-Wa-0aa" id="Une-SQ-jdv"/>
                         <outlet property="flashlightSwitch" destination="YIA-Ac-4D0" id="UiC-xr-uVV"/>
+                        <outlet property="nightModeIcon" destination="H7y-C0-oMJ" id="c0M-WI-HOZ"/>
                         <outlet property="nightModeSwitch" destination="c7A-m0-9UI" id="rJd-J9-9Wr"/>
                         <outlet property="themeSwitch" destination="c7A-m0-9UI" id="nZq-V7-jNe"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3B-au-AsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1786" y="134"/>
+            <point key="canvasLocation" x="1785.5072463768117" y="133.69565217391306"/>
         </scene>
         <!--About Screen-->
         <scene sceneID="ejJ-FY-oMS">
@@ -406,9 +442,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="1511" height="1511"/>
-        <image name="Pause" width="33" height="33"/>
-        <image name="gear2" width="51" height="51"/>
+        <image name="AboutIcon" width="50" height="50"/>
+        <image name="Flashlight" width="50" height="50"/>
+        <image name="Logo" width="362.6400146484375" height="362.6400146484375"/>
+        <image name="NightMode" width="50" height="50"/>
+        <image name="Pause" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="gear" width="50" height="50"/>
         <image name="gradiente" width="751" height="1335"/>
     </resources>
 </document>
