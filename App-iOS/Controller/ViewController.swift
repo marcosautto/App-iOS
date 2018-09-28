@@ -190,7 +190,7 @@ class ViewController: UIViewController {
         
         if selectedSong != ""{
             akplay()
-            songName.text = selectedSongLabel;
+//            songName.text = selectedSongLabel;
         }
         
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
