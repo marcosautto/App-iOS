@@ -62,8 +62,8 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-//        self.view.backgroundColor = UIColor.black
-//        
+        self.view.backgroundColor = UIColor.black
+        
 //        let box = UIImageView(frame: CGRectMake(0, 0, 100, 100))
 //        self.box.layer.cornerRadius = 8.0
 //        self.box.clipsToBounds = true
