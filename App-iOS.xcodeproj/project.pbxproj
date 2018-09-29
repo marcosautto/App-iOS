@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		28E3367E2158D10B00703458 /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3367D2158D10B00703458 /* PulseAnimation.swift */; };
 		53734785215E1785000F9E8E /* secondsToMinuteAndSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53734784215E1785000F9E8E /* secondsToMinuteAndSeconds.swift */; };
+		53734787215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */; };
 		640E8B602153F3550081078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B5F2153F3550081078C /* AppDelegate.swift */; };
 		640E8B622153F3550081078C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B612153F3550081078C /* ViewController.swift */; };
 		640E8B652153F3550081078C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B632153F3550081078C /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		0D8348A7352C43AF5A10ED6A /* Pods-App-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-iOS/Pods-App-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		28E3367D2158D10B00703458 /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		53734784215E1785000F9E8E /* secondsToMinuteAndSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondsToMinuteAndSeconds.swift; sourceTree = "<group>"; };
+		53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		640E8B5C2153F3550081078C /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		640E8B5F2153F3550081078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		640E8B612153F3550081078C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */,
+				53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				643C44902154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 in Resources */,
 				6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */,
 				640E8B652153F3550081078C /* Main.storyboard in Resources */,
+				53734787215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf in Resources */,
 				643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */,
 				641866152158EEFF001CDC0B /* Assets.xcassets in Resources */,
 				EE35EE3F2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 in Resources */,

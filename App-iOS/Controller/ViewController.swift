@@ -21,14 +21,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgview: UIImageView!
     @IBOutlet weak var selectSongButton: UIButton!
     @IBOutlet weak var tapTo: UILabel!
-    @IBOutlet weak var songListening: UILabel!
     @IBOutlet weak var songName: UILabel!
+    @IBOutlet weak var songListening: UILabel!
     @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var freq: UILabel!
-    @IBOutlet weak var amp: UILabel!
     @IBOutlet weak var songTiming: UILabel!
-    @IBOutlet weak var songLenght: UILabel!
-    
+    @IBOutlet weak var songLength: UILabel!
+    @IBOutlet weak var box: UIImageView!
     @IBAction func playPauseButton(_ sender: Any) {
         
         func pulse(){
@@ -64,7 +62,11 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        self.view.backgroundColor = UIColor.black
+//        self.view.backgroundColor = UIColor.black
+//        
+//        let box = UIImageView(frame: CGRectMake(0, 0, 100, 100))
+//        self.box.layer.cornerRadius = 8.0
+//        self.box.clipsToBounds = true
         
         view.addSubview(selectSongButton)
         
@@ -93,7 +95,7 @@ class ViewController: UIViewController {
         player.isLooping = true
         player.buffering = .always
         tracker = AKFrequencyTracker(player)
-        
+        songName.text = selectedSong
         AudioKit.output = tracker
         try! AudioKit.start()
         player.play()
@@ -104,11 +106,7 @@ class ViewController: UIViewController {
             amplitude = tracker.amplitude
             
             self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
-            
-            
-            //            String(format: "%.2f", frequency)
-            self.freq.text = "\(String(format: "%.3f", frequency))"
-            self.amp.text = "\(String(format: "%.3f", amplitude))"
+            self.songLength.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.duration))
             
             if player.isPlaying{
                 switch(Int(tracker.frequency)){

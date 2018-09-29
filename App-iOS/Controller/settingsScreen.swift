@@ -14,9 +14,9 @@ class settingsScreen: UITableViewController {
     @IBOutlet weak var themeSwitch: UISwitch!
     @IBOutlet weak var flashlightSwitch: UISwitch!
     @IBOutlet weak var flashlightIcon: UIImageView!
-    @IBOutlet weak var nightModeSwitch: UISwitch!
-    @IBOutlet weak var nightModeIcon: UIImageView!
     @IBOutlet weak var aboutIcon: UIImageView!
+    @IBOutlet weak var nightModeIcon: UIImageView!
+    @IBOutlet weak var nightModeSwitch: UISwitch!
     
     //FUNCTION PER LA TORCIA
     func toggleTorch(on: Bool) {
@@ -56,7 +56,7 @@ class settingsScreen: UITableViewController {
             self.nightModeSwitch.onTintColor = UIColor.orange
             self.flashlightIcon.image = UIImage(named: "FlashlightNight")
             self.nightModeIcon.image = UIImage(named: "NightModeNight")
-            //self.aboutIcon.image = UIImage(named: "AboutNight")
+            self.aboutIcon.image = UIImage(named: "AboutIconNight")
         } else {
             self.tableView.backgroundView?.isHidden = false
             self.navigationController?.navigationBar.tintColor = UIColor.white
@@ -65,7 +65,7 @@ class settingsScreen: UITableViewController {
             self.nightModeSwitch.onTintColor = UIColor.cyan
             self.flashlightIcon.image = UIImage(named: "Flashlight")
             self.nightModeIcon.image = UIImage(named: "NightMode")
-            //self.aboutIcon.image = UIImage(named: "About")
+            self.aboutIcon.image = UIImage(named: "AboutIcon")
         }
     }
     
