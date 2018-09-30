@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="-58" width="414" height="794"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXt-po-UkP" userLabel="Box">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IXt-po-UkP" userLabel="Box">
                                 <rect key="frame" x="20" y="482.5" width="335" height="168.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.34886023116438358" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -173,7 +173,7 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YIA-Ac-4D0">
                                                     <rect key="frame" x="306" y="7" width="51" height="31"/>
                                                     <connections>
-                                                        <action selector="torchSwitch:" destination="6ke-Jj-LJz" eventType="valueChanged" id="rEU-5b-03a"/>
+                                                        <action selector="torchSwitch:" destination="6ke-Jj-LJz" eventType="valueChanged" id="tEO-9p-TST"/>
                                                     </connections>
                                                 </switch>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Flashlight" translatesAutoresizingMaskIntoConstraints="NO" id="bN5-Wa-0aa">
@@ -277,6 +277,7 @@
                         <outlet property="nightModeIcon" destination="H7y-C0-oMJ" id="c0M-WI-HOZ"/>
                         <outlet property="nightModeSwitch" destination="c7A-m0-9UI" id="rJd-J9-9Wr"/>
                         <outlet property="themeSwitch" destination="c7A-m0-9UI" id="nZq-V7-jNe"/>
+                        <outlet property="torchSwitch" destination="YIA-Ac-4D0" id="Su3-eP-Fgr"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3B-au-AsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -450,9 +451,9 @@
     <resources>
         <image name="AboutIcon" width="50" height="50"/>
         <image name="Flashlight" width="50" height="50"/>
-        <image name="Logo" width="362.6400146484375" height="362.6400146484375"/>
+        <image name="Logo" width="1511" height="1511"/>
         <image name="NightMode" width="50" height="50"/>
-        <image name="Pause" width="37.5" height="37.5"/>
+        <image name="Pause" width="37" height="37"/>
         <image name="gear" width="50" height="50"/>
         <image name="gradiente" width="751" height="1335"/>
     </resources>

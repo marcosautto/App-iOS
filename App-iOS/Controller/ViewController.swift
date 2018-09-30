@@ -41,6 +41,7 @@ class ViewController: UIViewController {
         {
             player.pause()
             playButton.setImage(UIImage(named: "Play.png"), for: .normal)
+            self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
             pulseStop()
             
         }
@@ -63,10 +64,6 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
         self.view.backgroundColor = UIColor.black
-        
-//        let box = UIImageView(frame: CGRectMake(0, 0, 100, 100))
-//        self.box.layer.cornerRadius = 8.0
-//        self.box.clipsToBounds = true
         
         view.addSubview(selectSongButton)
         
@@ -100,7 +97,8 @@ class ViewController: UIViewController {
         try! AudioKit.start()
         player.play()
         selectedSong = ""
-        AKPlaygroundLoop(every: 0.01){
+        
+        AKPlaygroundLoop(every: 0.001){
             
             frequency = tracker.frequency
             amplitude = tracker.amplitude

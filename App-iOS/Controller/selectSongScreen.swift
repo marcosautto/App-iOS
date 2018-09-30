@@ -118,6 +118,7 @@ class selectSong: UITableViewController {
         destVC.playButton.setImage(UIImage(named: "Pause.png"), for: .normal)
         destVC.songTiming.isHidden = false
         destVC.songLength.isHidden = false
+        destVC.box.isHidden = false
     }
     
 }

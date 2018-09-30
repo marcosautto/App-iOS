@@ -17,6 +17,7 @@ class settingsScreen: UITableViewController {
     @IBOutlet weak var aboutIcon: UIImageView!
     @IBOutlet weak var nightModeIcon: UIImageView!
     @IBOutlet weak var nightModeSwitch: UISwitch!
+    @IBOutlet weak var torchSwitch: UISwitch!
     
     //FUNCTION PER LA TORCIA
     func toggleTorch(on: Bool) {
@@ -43,7 +44,23 @@ class settingsScreen: UITableViewController {
     //END FUNC TORCH
     
     @IBAction func torchSwitch(_ sender: UISwitch) {
-        //ROBA
+//        if sender.isOn {
+//            if player.isPlaying {
+//                while (true) {
+//                    Thread.sleep(forTimeInterval: 1)
+//                    toggleTorch(on: true)
+//                    Thread.sleep(forTimeInterval: 1)
+//                    toggleTorch(on: false)
+//                }
+//            }
+//            else {
+//                toggleTorch(on: false)
+//            }
+//        }
+//        else {
+//            toggleTorch(on: false)
+//        }
+//        BUGGA TUTTO NON SO PERCHE' DIOCANEE
     }
     
     
