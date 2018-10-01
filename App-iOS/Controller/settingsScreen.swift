@@ -16,7 +16,7 @@ class settingsScreen: UITableViewController {
     @IBOutlet weak var themeSwitch: UISwitch!
     @IBOutlet weak var flashlightSwitch: UISwitch!  {
         didSet {
-            if !TorchVerification {
+            if TorchVerification == false {
                 flashlightSwitch.isOn = false
             } else {
                 flashlightSwitch.isOn = true
