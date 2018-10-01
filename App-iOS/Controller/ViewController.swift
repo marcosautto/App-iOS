@@ -2,14 +2,14 @@
 //  ViewController.swift
 //  App-iOS
 //
-//  Created by Marco Sautto on 20/09/18.
+//  Created by musicaecoding on 20/09/18.
 //  Copyright © 2018 musicaecoding. All rights reserved.
 //
 
 import UIKit
 import AudioKit
-var player = AKPlayer(audioFile: file)
 var file = try! AKAudioFile(readFileName: selectedSong+".mp3")
+var player = AKPlayer(audioFile: file)
 var tracker = AKFrequencyTracker(player)
 var frequency = 0.0
 var amplitude = 0.0
@@ -28,15 +28,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var songLength: UILabel!
     @IBOutlet weak var box: UIImageView!
     
+    func pulse(){
+        selectSongButton.pulsate()
+    }
+    
+    func pulseStop(){
+        selectSongButton.pulsateStop()
+    }
+    
     @IBAction func playPauseButton(_ sender: Any) {
-        
-        func pulse(){
-            selectSongButton.pulsate()
-        }
-        
-        func pulseStop(){
-            selectSongButton.pulsateStop()
-        }
         
         if player.isPlaying
         {
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        self.title = "VibrApp"
+        self.title = "Vibry"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.barTintColor = view.backgroundColor
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -100,6 +100,7 @@ class ViewController: UIViewController {
         selectedSong = ""
         
         AKPlaygroundLoop(every: 0.001){
+            
             
             frequency = tracker.frequency
             amplitude = tracker.amplitude
@@ -197,7 +198,6 @@ class ViewController: UIViewController {
         
         if selectedSong != ""{
             akplay()
-//            songName.text = selectedSongLabel;
         }
         
         if let theme = (UserDefaults.standard.object(forKey: "theme") as? String) {
@@ -219,9 +219,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func unwind(_ sender: UIStoryboardSegue){
-        func pulse(){
-            selectSongButton.pulsate()
-        }
         pulse()
     }
     
