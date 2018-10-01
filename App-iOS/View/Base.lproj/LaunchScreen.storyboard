@@ -27,13 +27,14 @@
                                 <rect key="frame" x="62" y="153" width="250" height="250"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="Gur-VB-qhw"/>
-                                    <constraint firstAttribute="height" constant="250" id="dvt-vq-duE"/>
+                                    <constraint firstAttribute="width" constant="250" id="c2A-3C-jbA"/>
+                                    <constraint firstAttribute="height" constant="250" id="fxI-CN-de7"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VibrApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-ek-iUq">
-                                <rect key="frame" x="118" y="411" width="138" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VibrApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-ek-iUq">
+                                <rect key="frame" x="0.0" y="435" width="375" height="42"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="35"/>
                                 <color key="textColor" red="0.32941176470588235" green="0.66274509803921566" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -41,14 +42,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ygl-ek-iUq" firstAttribute="top" secondItem="200-Ny-DS1" secondAttribute="bottom" constant="8" id="5Hq-WQ-sQb"/>
-                            <constraint firstItem="Ygl-ek-iUq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="Qhb-8G-H0o"/>
-                            <constraint firstItem="200-Ny-DS1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="W5R-kR-5Xd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="200-Ny-DS1" secondAttribute="trailing" constant="63" id="YTb-MN-9M0"/>
-                            <constraint firstItem="Ygl-ek-iUq" firstAttribute="top" secondItem="200-Ny-DS1" secondAttribute="bottom" constant="8" id="YXK-Za-S4n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ygl-ek-iUq" secondAttribute="trailing" constant="119" id="sUD-na-Yra"/>
-                            <constraint firstItem="200-Ny-DS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="u7x-5L-Yyb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ygl-ek-iUq" secondAttribute="bottom" constant="214" id="z3h-Pm-yBO"/>
+                            <constraint firstItem="Ygl-ek-iUq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6A9-5H-AQG"/>
+                            <constraint firstItem="200-Ny-DS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="6Xp-f6-3XX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="200-Ny-DS1" secondAttribute="trailing" constant="63" id="AHD-sY-gl8"/>
+                            <constraint firstItem="Ygl-ek-iUq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JKd-wF-319"/>
+                            <constraint firstItem="200-Ny-DS1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="133" id="VZg-BK-Mck"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ygl-ek-iUq" secondAttribute="bottom" constant="190" id="X7y-gK-Acs"/>
+                            <constraint firstItem="Ygl-ek-iUq" firstAttribute="top" secondItem="200-Ny-DS1" secondAttribute="bottom" constant="32" id="dbc-I3-VFm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
