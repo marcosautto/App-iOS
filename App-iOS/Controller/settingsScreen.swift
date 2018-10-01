@@ -14,7 +14,15 @@ var TorchVerification : Bool = false
 class settingsScreen: UITableViewController {
     
     @IBOutlet weak var themeSwitch: UISwitch!
-    @IBOutlet weak var flashlightSwitch: UISwitch!
+    @IBOutlet weak var flashlightSwitch: UISwitch!  {
+        didSet {
+            if !TorchVerification {
+                flashlightSwitch.isOn = false
+            } else {
+                flashlightSwitch.isOn = true
+            }
+        }
+    }
     @IBOutlet weak var flashlightIcon: UIImageView!
     @IBOutlet weak var aboutIcon: UIImageView!
     @IBOutlet weak var nightModeIcon: UIImageView!
