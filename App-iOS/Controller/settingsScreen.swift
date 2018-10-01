@@ -8,6 +8,8 @@
 
 import UIKit
 import AVKit
+var TorchVerification : Bool = false
+
 
 class settingsScreen: UITableViewController {
     
@@ -18,49 +20,14 @@ class settingsScreen: UITableViewController {
     @IBOutlet weak var nightModeIcon: UIImageView!
     @IBOutlet weak var nightModeSwitch: UISwitch!
     @IBOutlet weak var torchSwitch: UISwitch!
-    
-    //FUNCTION PER LA TORCIA
-    func toggleTorch(on: Bool) {
-        guard let device = AVCaptureDevice.default(for: .video) else { return }
-        
-        if device.hasTorch {
-            do {
-                try device.lockForConfiguration()
-                
-                if on == true {
-                    device.torchMode = .on
-                } else {
-                    device.torchMode = .off
-                }
-                
-                device.unlockForConfiguration()
-            } catch {
-                print("Torch could not be used")
-            }
-        } else {
-            print("Torch is not available")
-        }
-    }
-    //END FUNC TORCH
-    
+
     @IBAction func torchSwitch(_ sender: UISwitch) {
-//        if sender.isOn {
-//            if player.isPlaying {
-//                while (true) {
-//                    Thread.sleep(forTimeInterval: 1)
-//                    toggleTorch(on: true)
-//                    Thread.sleep(forTimeInterval: 1)
-//                    toggleTorch(on: false)
-//                }
-//            }
-//            else {
-//                toggleTorch(on: false)
-//            }
-//        }
-//        else {
-//            toggleTorch(on: false)
-//        }
-//        BUGGA TUTTO NON SO PERCHE' DIOCANEE
+        if sender.isOn {
+            TorchVerification = true
+        }
+        else {
+            TorchVerification = false
+        }
     }
     
     
