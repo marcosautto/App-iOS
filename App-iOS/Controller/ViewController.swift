@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var songTiming: UILabel!
     @IBOutlet weak var songLength: UILabel!
     @IBOutlet weak var box: UIImageView!
+    
     @IBAction func playPauseButton(_ sender: Any) {
         
         func pulse(){
@@ -41,8 +42,8 @@ class ViewController: UIViewController {
         {
             player.pause()
             playButton.setImage(UIImage(named: "Play.png"), for: .normal)
-            self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
             pulseStop()
+            self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
             
         }
         else
@@ -104,6 +105,9 @@ class ViewController: UIViewController {
             amplitude = tracker.amplitude
             
             self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.currentTime))
+            if !player.isPlaying{
+                self.songTiming.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.pauseTime!))
+            }
             self.songLength.text = secondsToHoursMinutesSeconds(inputSeconds: Int(player.duration))
             
             if player.isPlaying{
