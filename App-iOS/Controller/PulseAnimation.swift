@@ -11,15 +11,14 @@ import UIKit
 
 extension   UIButton {
     
-    //prova commit assets
     func pulsate() {
         
         let pulse = CASpringAnimation(keyPath: "transform.scale")
-        pulse.duration = 100
+        pulse.duration = 5
         pulse.fromValue = 0.97
         pulse.toValue = 1.0
         pulse.autoreverses = true
-        pulse.repeatCount = 1000000
+        pulse.repeatCount = 1000
         pulse.initialVelocity = 0.5
         pulse.damping = 0.5
         pulse.mass = 1
