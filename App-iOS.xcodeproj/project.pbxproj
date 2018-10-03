@@ -13,7 +13,7 @@
 		530ECCFF2164AE510082D491 /* Yiruma - River Flows in You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */; };
 		530ECD002164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */; };
 		530ECD012164AE510082D491 /* Micheal Buble - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFB2164AE510082D491 /* Micheal Buble - Moondance.mp3 */; };
-		530ECD022164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 */; };
+		530ECD022164AE510082D491 /* Metallica - The Unforgiven II.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II.mp3 */; };
 		53734785215E1785000F9E8E /* secondsToMinuteAndSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53734784215E1785000F9E8E /* secondsToMinuteAndSeconds.swift */; };
 		53734787215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */; };
 		53816EDC2164B0E80044FA70 /* FP.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED42164B0E80044FA70 /* FP.jpeg */; };
@@ -24,7 +24,7 @@
 		53816EE12164B0E80044FA70 /* MC.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED92164B0E80044FA70 /* MC.jpeg */; };
 		53816EE22164B0E80044FA70 /* LE.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816EDA2164B0E80044FA70 /* LE.jpeg */; };
 		53816EE32164B0E80044FA70 /* AL.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816EDB2164B0E80044FA70 /* AL.jpeg */; };
-		538E53CA2164C25A00D32B2C /* Veo Veo - Michele Del Baldo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 538E53C92164C25A00D32B2C /* Veo Veo - Michele Del Baldo.mp3 */; };
+		538E53CA2164C25A00D32B2C /* Michele Del Baldo - Veo Veo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 538E53C92164C25A00D32B2C /* Michele Del Baldo - Veo Veo.mp3 */; };
 		640E8B602153F3550081078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B5F2153F3550081078C /* AppDelegate.swift */; };
 		640E8B622153F3550081078C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B612153F3550081078C /* ViewController.swift */; };
 		640E8B652153F3550081078C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B632153F3550081078C /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 		6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */; };
 		6443B4402159401D002C0745 /* aboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443B43F2159401D002C0745 /* aboutScreen.swift */; };
 		893E8EA5DEEDB830B3B88897 /* Pods_App_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */; };
-		D575A2422164C031004A94D9 /* Maluma - El Perdedorx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D575A2412164C031004A94D9 /* Maluma - El Perdedorx.mp3 */; };
+		D575A2422164C031004A94D9 /* Maluma - El Perdedor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D575A2412164C031004A94D9 /* Maluma - El Perdedor.mp3 */; };
 		E1245567215B93C5003D73F9 /* AKPlaygroundLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1245566215B93C5003D73F9 /* AKPlaygroundLoop.swift */; };
 		E14D02262154E7EA00464509 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D02252154E7EA00464509 /* Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 		530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - River Flows in You.mp3"; sourceTree = "<group>"; };
 		530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Travis Scott - Butterfly Effect.mp3"; sourceTree = "<group>"; };
 		530ECCFB2164AE510082D491 /* Micheal Buble - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Micheal Buble - Moondance.mp3"; sourceTree = "<group>"; };
-		530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Metallica - The Unforgiven II (Video).mp3"; sourceTree = "<group>"; };
+		530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Metallica - The Unforgiven II.mp3"; sourceTree = "<group>"; };
 		53734784215E1785000F9E8E /* secondsToMinuteAndSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondsToMinuteAndSeconds.swift; sourceTree = "<group>"; };
 		53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		53816ED42164B0E80044FA70 /* FP.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FP.jpeg; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		53816ED92164B0E80044FA70 /* MC.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MC.jpeg; sourceTree = "<group>"; };
 		53816EDA2164B0E80044FA70 /* LE.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LE.jpeg; sourceTree = "<group>"; };
 		53816EDB2164B0E80044FA70 /* AL.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AL.jpeg; sourceTree = "<group>"; };
-		538E53C92164C25A00D32B2C /* Veo Veo - Michele Del Baldo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Veo Veo - Michele Del Baldo.mp3"; sourceTree = "<group>"; };
+		538E53C92164C25A00D32B2C /* Michele Del Baldo - Veo Veo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Michele Del Baldo - Veo Veo.mp3"; sourceTree = "<group>"; };
 		640E8B5C2153F3550081078C /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		640E8B5F2153F3550081078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		640E8B612153F3550081078C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		6443B43F2159401D002C0745 /* aboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutScreen.swift; sourceTree = "<group>"; };
 		8D02CFB9C8E795F345987407 /* Pods-App-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-iOS/Pods-App-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D575A2412164C031004A94D9 /* Maluma - El Perdedorx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Maluma - El Perdedorx.mp3"; sourceTree = "<group>"; };
+		D575A2412164C031004A94D9 /* Maluma - El Perdedor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Maluma - El Perdedor.mp3"; sourceTree = "<group>"; };
 		E1245566215B93C5003D73F9 /* AKPlaygroundLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKPlaygroundLoop.swift; sourceTree = "<group>"; };
 		E14D02252154E7EA00464509 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,13 +149,13 @@
 		640E8B752153FCA90081078C /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				538E53C92164C25A00D32B2C /* Veo Veo - Michele Del Baldo.mp3 */,
-				530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 */,
+				538E53C92164C25A00D32B2C /* Michele Del Baldo - Veo Veo.mp3 */,
+				530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II.mp3 */,
 				530ECCFB2164AE510082D491 /* Micheal Buble - Moondance.mp3 */,
 				530ECCF82164AE510082D491 /* System Of A Down - Chop Suey!.mp3 */,
 				530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */,
 				530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */,
-				D575A2412164C031004A94D9 /* Maluma - El Perdedorx.mp3 */,
+				D575A2412164C031004A94D9 /* Maluma - El Perdedor.mp3 */,
 			);
 			name = Songs;
 			path = "App-iOS/Songs";
@@ -288,20 +288,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				530ECCFE2164AE510082D491 /* System Of A Down - Chop Suey!.mp3 in Resources */,
-				530ECD022164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 in Resources */,
+				530ECD022164AE510082D491 /* Metallica - The Unforgiven II.mp3 in Resources */,
 				640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */,
 				6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */,
 				640E8B652153F3550081078C /* Main.storyboard in Resources */,
 				53816EDF2164B0E80044FA70 /* MDL.jpeg in Resources */,
 				53816EE32164B0E80044FA70 /* AL.jpeg in Resources */,
 				53734787215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf in Resources */,
-				538E53CA2164C25A00D32B2C /* Veo Veo - Michele Del Baldo.mp3 in Resources */,
+				538E53CA2164C25A00D32B2C /* Michele Del Baldo - Veo Veo.mp3 in Resources */,
 				530ECD012164AE510082D491 /* Micheal Buble - Moondance.mp3 in Resources */,
 				53816EE02164B0E80044FA70 /* LB.jpeg in Resources */,
 				53816EDE2164B0E80044FA70 /* VS.jpeg in Resources */,
 				530ECCFF2164AE510082D491 /* Yiruma - River Flows in You.mp3 in Resources */,
 				53816EE22164B0E80044FA70 /* LE.jpeg in Resources */,
-				D575A2422164C031004A94D9 /* Maluma - El Perdedorx.mp3 in Resources */,
+				D575A2422164C031004A94D9 /* Maluma - El Perdedor.mp3 in Resources */,
 				53816EDD2164B0E80044FA70 /* MS.jpeg in Resources */,
 				53816EDC2164B0E80044FA70 /* FP.jpeg in Resources */,
 				53816EE12164B0E80044FA70 /* MC.jpeg in Resources */,
