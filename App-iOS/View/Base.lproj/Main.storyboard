@@ -160,6 +160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection headerTitle=" " id="h8r-eO-loF">
                                 <cells>
@@ -259,7 +260,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <segue destination="diY-I9-ttS" kind="show" id="wJk-VN-olz"/>
+                                            <segue destination="qU2-N1-NKi" kind="show" id="iEr-Cx-Sm6"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -283,111 +284,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3B-au-AsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1785.5072463768117" y="133.69565217391306"/>
-        </scene>
-        <!--About Screen-->
-        <scene sceneID="ejJ-FY-oMS">
-            <objects>
-                <viewController id="diY-I9-ttS" customClass="aboutScreen" customModule="App_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OSF-1M-f7E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradiente" translatesAutoresizingMaskIntoConstraints="NO" id="Hgj-dq-Nyj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXQ-pI-DJJ">
-                                <rect key="frame" x="107.5" y="184" width="160" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrea Lombardi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jk0-NT-0OK">
-                                <rect key="frame" x="109.5" y="229" width="156" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luigi Borchia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVX-WG-32j">
-                                <rect key="frame" x="128.5" y="303" width="118" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luca Esposito Pietrafitta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9a-se-fOt">
-                                <rect key="frame" x="77.5" y="340" width="220" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincenzo Marco De Luca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNs-g0-m0F">
-                                <rect key="frame" x="70" y="377" width="235.5" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco Sautto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULU-QJ-aBT">
-                                <rect key="frame" x="126.5" y="414.5" width="122" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vincenzo Silvio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ku-05-9Bn">
-                                <rect key="frame" x="118.5" y="451.5" width="138" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marco Conte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTt-gK-fI1">
-                                <rect key="frame" x="129" y="488.5" width="117" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Francesco Picone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcO-a9-xIe">
-                                <rect key="frame" x="106.5" y="266" width="162" height="26"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="2Ku-05-9Bn" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="10p-dV-Jga"/>
-                            <constraint firstItem="rNs-g0-m0F" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="2Ta-T6-FSp"/>
-                            <constraint firstItem="Jk0-NT-0OK" firstAttribute="top" secondItem="gXQ-pI-DJJ" secondAttribute="bottom" constant="15" id="2kv-9d-R83"/>
-                            <constraint firstItem="b9a-se-fOt" firstAttribute="top" secondItem="RVX-WG-32j" secondAttribute="bottom" constant="11" id="2vQ-Mj-KNH"/>
-                            <constraint firstItem="gXQ-pI-DJJ" firstAttribute="top" secondItem="yDN-tL-3Se" secondAttribute="top" constant="120" id="3oh-9W-goB"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="trailing" secondItem="yDN-tL-3Se" secondAttribute="trailing" id="4dY-WY-KYn"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="trailing" secondItem="yDN-tL-3Se" secondAttribute="trailing" id="5OA-DY-hKZ"/>
-                            <constraint firstItem="ULU-QJ-aBT" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="8ct-gL-s87"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="bottom" secondItem="yDN-tL-3Se" secondAttribute="bottom" id="A8v-Oo-cB9"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="top" secondItem="OSF-1M-f7E" secondAttribute="top" id="FNn-Ci-WtV"/>
-                            <constraint firstItem="b9a-se-fOt" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="Hku-ra-qiB"/>
-                            <constraint firstItem="RVX-WG-32j" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="Ie0-Ln-xRB"/>
-                            <constraint firstItem="ULU-QJ-aBT" firstAttribute="top" secondItem="rNs-g0-m0F" secondAttribute="bottom" constant="11" id="OZU-mY-rV9"/>
-                            <constraint firstItem="Jk0-NT-0OK" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="Prr-5W-XMs"/>
-                            <constraint firstItem="2Ku-05-9Bn" firstAttribute="top" secondItem="ULU-QJ-aBT" secondAttribute="bottom" constant="11" id="Uuu-dr-X8C"/>
-                            <constraint firstItem="rNs-g0-m0F" firstAttribute="top" secondItem="b9a-se-fOt" secondAttribute="bottom" constant="11" id="ZQf-YR-ZTw"/>
-                            <constraint firstItem="bcO-a9-xIe" firstAttribute="top" secondItem="Jk0-NT-0OK" secondAttribute="bottom" constant="11" id="ZiL-hR-tJb"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="bottom" secondItem="yDN-tL-3Se" secondAttribute="bottom" id="ZrO-P5-t8j"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="leading" secondItem="yDN-tL-3Se" secondAttribute="leading" id="a9e-Oc-wrz"/>
-                            <constraint firstItem="oTt-gK-fI1" firstAttribute="top" secondItem="2Ku-05-9Bn" secondAttribute="bottom" constant="11" id="elu-4f-YWG"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="top" secondItem="OSF-1M-f7E" secondAttribute="top" id="fJe-Ho-vsF"/>
-                            <constraint firstItem="gXQ-pI-DJJ" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="k9B-uB-T83"/>
-                            <constraint firstItem="bcO-a9-xIe" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="lQA-Ru-Vtt"/>
-                            <constraint firstItem="Hgj-dq-Nyj" firstAttribute="leading" secondItem="yDN-tL-3Se" secondAttribute="leading" id="nBu-3s-ieD"/>
-                            <constraint firstItem="RVX-WG-32j" firstAttribute="top" secondItem="bcO-a9-xIe" secondAttribute="bottom" constant="11" id="rCf-1j-Odc"/>
-                            <constraint firstItem="oTt-gK-fI1" firstAttribute="centerX" secondItem="OSF-1M-f7E" secondAttribute="centerX" id="s22-2e-pf8"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yDN-tL-3Se"/>
-                    </view>
-                    <connections>
-                        <outlet property="imgview" destination="Hgj-dq-Nyj" id="8Gy-jh-Oza"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jh-tS-Y20" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1785.5072463768117" y="844.56521739130437"/>
         </scene>
         <!--Select Song-->
         <scene sceneID="k4D-c8-NGT">
@@ -426,7 +322,267 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Org-Wq-8o2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="eJX-M7-5ne" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="845"/>
+            <point key="canvasLocation" x="1074" y="843"/>
+        </scene>
+        <!--About Screen-->
+        <scene sceneID="5ZV-f6-B45">
+            <objects>
+                <tableViewController id="qU2-N1-NKi" customClass="aboutScreen" customModule="App_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="EZn-MG-qXl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="AlP-lv-hKd">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="wUL-Fo-Ec8">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wUL-Fo-Ec8" id="EMZ-iY-AHA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LB.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rq2-Yx-UqZ" userLabel="LB">
+                                                    <rect key="frame" x="16" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luigi Borchia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcg-3A-tFK">
+                                                    <rect key="frame" x="109" y="25" width="99" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="bdZ-so-gVu">
+                                        <rect key="frame" x="0.0" y="105" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bdZ-so-gVu" id="mQv-Vy-07r">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MC.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9We-8Y-UhM">
+                                                    <rect key="frame" x="16" y="1" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marco Conte" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfb-AC-d15">
+                                                    <rect key="frame" x="112" y="26" width="99" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="tY2-wZ-yPM">
+                                        <rect key="frame" x="0.0" y="175" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tY2-wZ-yPM" id="98e-Se-9zc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MDL.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Fob-Le-sEe">
+                                                    <rect key="frame" x="16" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vincenzo Marco De Luca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jL5-ub-zgo">
+                                                    <rect key="frame" x="111" y="25" width="191" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="NZF-yp-ofy">
+                                        <rect key="frame" x="0.0" y="245" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NZF-yp-ofy" id="Yiv-Pb-sco">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LE.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Ktw-g7-VaJ">
+                                                    <rect key="frame" x="16" y="-1" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Luca Esposito Pietrafitta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGS-1l-cgE">
+                                                    <rect key="frame" x="110" y="24" width="186" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="ltC-9O-C3x">
+                                        <rect key="frame" x="0.0" y="315" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ltC-9O-C3x" id="FZx-HP-lb3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AL.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GTO-kB-Ki2">
+                                                    <rect key="frame" x="16" y="-1" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Andrea Lombardi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWZ-F2-hWe">
+                                                    <rect key="frame" x="112" y="24" width="131" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="71" id="pzR-T7-ZBA">
+                                        <rect key="frame" x="0.0" y="385" width="375" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pzR-T7-ZBA" id="3D8-F6-Ibq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FP.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-0f-U0f">
+                                                    <rect key="frame" x="16" y="0.0" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Francesco Picone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-4K-MDh">
+                                                    <rect key="frame" x="114" y="25" width="136" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="ujR-Re-B1T">
+                                        <rect key="frame" x="0.0" y="456" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ujR-Re-B1T" id="r4P-pa-BHE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MS.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jqA-ML-VHJ">
+                                                    <rect key="frame" x="16" y="-1" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marco Sautto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZR-PP-hSL">
+                                                    <rect key="frame" x="112" y="24" width="103" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="70" id="NHQ-F7-I4h">
+                                        <rect key="frame" x="0.0" y="526" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NHQ-F7-I4h" id="gnz-VT-dSX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="VS.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="OFK-hw-U1R">
+                                                    <rect key="frame" x="16" y="-1" width="70" height="70"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vincenzo Silvio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfN-O4-DPM">
+                                                    <rect key="frame" x="111" y="24" width="116" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="qU2-N1-NKi" id="6ZZ-BN-Ch6"/>
+                            <outlet property="delegate" destination="qU2-N1-NKi" id="J8J-Kd-iMl"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="al" destination="GTO-kB-Ki2" id="Zl7-9e-1Uu"/>
+                        <outlet property="alLab" destination="BWZ-F2-hWe" id="zCe-MP-Te1"/>
+                        <outlet property="fp" destination="nJ0-0f-U0f" id="6Qz-a8-Zjd"/>
+                        <outlet property="fpLab" destination="CUK-4K-MDh" id="gHF-iJ-yWh"/>
+                        <outlet property="lb" destination="rq2-Yx-UqZ" id="nfn-yo-jyv"/>
+                        <outlet property="lbLab" destination="gcg-3A-tFK" id="4tv-dV-hcT"/>
+                        <outlet property="le" destination="Ktw-g7-VaJ" id="Wfb-SC-QYa"/>
+                        <outlet property="leLab" destination="ZGS-1l-cgE" id="0GJ-jf-qgO"/>
+                        <outlet property="mc" destination="9We-8Y-UhM" id="Qqa-Zj-8NR"/>
+                        <outlet property="mcLab" destination="Sfb-AC-d15" id="QIP-7h-jr0"/>
+                        <outlet property="mdl" destination="Fob-Le-sEe" id="QwX-wt-pmA"/>
+                        <outlet property="mdlLab" destination="jL5-ub-zgo" id="RQq-7X-xBb"/>
+                        <outlet property="ms" destination="jqA-ML-VHJ" id="rxP-EP-dpd"/>
+                        <outlet property="msLab" destination="GZR-PP-hSL" id="E5s-VI-Gja"/>
+                        <outlet property="vs" destination="OFK-hw-U1R" id="gXC-YT-DcV"/>
+                        <outlet property="vsLab" destination="qfN-O4-DPM" id="sTd-He-Cg0"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIN-Nc-qFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="843.32833583208401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ota-oA-bnc">
@@ -449,11 +605,19 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AL.jpeg" width="854" height="821"/>
         <image name="AboutIcon" width="50" height="50"/>
+        <image name="FP.jpeg" width="718" height="673"/>
         <image name="Flashlight" width="50" height="50"/>
+        <image name="LB.jpeg" width="676" height="670"/>
+        <image name="LE.jpeg" width="1161" height="1154"/>
         <image name="Logo" width="1511" height="1511"/>
+        <image name="MC.jpeg" width="1181" height="1154"/>
+        <image name="MDL.jpeg" width="417" height="430"/>
+        <image name="MS.jpeg" width="352" height="336"/>
         <image name="NightMode" width="50" height="50"/>
         <image name="Pause" width="37" height="37"/>
+        <image name="VS.jpeg" width="521" height="540"/>
         <image name="gear" width="50" height="50"/>
         <image name="gradiente" width="751" height="1335"/>
     </resources>

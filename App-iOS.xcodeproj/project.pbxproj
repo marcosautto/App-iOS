@@ -9,8 +9,22 @@
 /* Begin PBXBuildFile section */
 		28E3367E2158D10B00703458 /* PulseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E3367D2158D10B00703458 /* PulseAnimation.swift */; };
 		530ECCF7216208AF0082D491 /* Torch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530ECCF6216208AF0082D491 /* Torch.swift */; };
+		530ECCFE2164AE510082D491 /* System Of A Down - Chop Suey!.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCF82164AE510082D491 /* System Of A Down - Chop Suey!.mp3 */; };
+		530ECCFF2164AE510082D491 /* Yiruma - River Flows in You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */; };
+		530ECD002164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */; };
+		530ECD012164AE510082D491 /* Micheal Buble - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFB2164AE510082D491 /* Micheal Buble - Moondance.mp3 */; };
+		530ECD022164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 */; };
+		530ECD032164AE510082D491 /* Ludovico Einaudi - Nuvole Bianche.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 530ECCFD2164AE510082D491 /* Ludovico Einaudi - Nuvole Bianche.mp3 */; };
 		53734785215E1785000F9E8E /* secondsToMinuteAndSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53734784215E1785000F9E8E /* secondsToMinuteAndSeconds.swift */; };
 		53734787215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */; };
+		53816EDC2164B0E80044FA70 /* FP.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED42164B0E80044FA70 /* FP.jpeg */; };
+		53816EDD2164B0E80044FA70 /* MS.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED52164B0E80044FA70 /* MS.jpeg */; };
+		53816EDE2164B0E80044FA70 /* VS.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED62164B0E80044FA70 /* VS.jpeg */; };
+		53816EDF2164B0E80044FA70 /* MDL.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED72164B0E80044FA70 /* MDL.jpeg */; };
+		53816EE02164B0E80044FA70 /* LB.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED82164B0E80044FA70 /* LB.jpeg */; };
+		53816EE12164B0E80044FA70 /* MC.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816ED92164B0E80044FA70 /* MC.jpeg */; };
+		53816EE22164B0E80044FA70 /* LE.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816EDA2164B0E80044FA70 /* LE.jpeg */; };
+		53816EE32164B0E80044FA70 /* AL.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 53816EDB2164B0E80044FA70 /* AL.jpeg */; };
 		640E8B602153F3550081078C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B5F2153F3550081078C /* AppDelegate.swift */; };
 		640E8B622153F3550081078C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B612153F3550081078C /* ViewController.swift */; };
 		640E8B652153F3550081078C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640E8B632153F3550081078C /* Main.storyboard */; };
@@ -18,24 +32,33 @@
 		640E8B722153F9050081078C /* settingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B712153F9050081078C /* settingsScreen.swift */; };
 		640E8B742153FA080081078C /* selectSongScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E8B732153FA080081078C /* selectSongScreen.swift */; };
 		641866152158EEFF001CDC0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 641866142158EEFF001CDC0B /* Assets.xcassets */; };
-		643C448D2154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */; };
-		643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */; };
-		643C448F2154E63D00914068 /* Micheal Buble - Moondance.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */; };
-		643C44902154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 643C448C2154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 */; };
 		6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */; };
 		6443B4402159401D002C0745 /* aboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443B43F2159401D002C0745 /* aboutScreen.swift */; };
 		893E8EA5DEEDB830B3B88897 /* Pods_App_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */; };
 		E1245567215B93C5003D73F9 /* AKPlaygroundLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1245566215B93C5003D73F9 /* AKPlaygroundLoop.swift */; };
 		E14D02262154E7EA00464509 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D02252154E7EA00464509 /* Extensions.swift */; };
-		EE35EE3F2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D8348A7352C43AF5A10ED6A /* Pods-App-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-iOS/Pods-App-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		28E3367D2158D10B00703458 /* PulseAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseAnimation.swift; sourceTree = "<group>"; };
 		530ECCF6216208AF0082D491 /* Torch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Torch.swift; sourceTree = "<group>"; };
+		530ECCF82164AE510082D491 /* System Of A Down - Chop Suey!.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "System Of A Down - Chop Suey!.mp3"; sourceTree = "<group>"; };
+		530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Yiruma - River Flows in You.mp3"; sourceTree = "<group>"; };
+		530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Travis Scott - Butterfly Effect.mp3"; sourceTree = "<group>"; };
+		530ECCFB2164AE510082D491 /* Micheal Buble - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Micheal Buble - Moondance.mp3"; sourceTree = "<group>"; };
+		530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Metallica - The Unforgiven II (Video).mp3"; sourceTree = "<group>"; };
+		530ECCFD2164AE510082D491 /* Ludovico Einaudi - Nuvole Bianche.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ludovico Einaudi - Nuvole Bianche.mp3"; sourceTree = "<group>"; };
 		53734784215E1785000F9E8E /* secondsToMinuteAndSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondsToMinuteAndSeconds.swift; sourceTree = "<group>"; };
 		53734786215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		53816ED42164B0E80044FA70 /* FP.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FP.jpeg; sourceTree = "<group>"; };
+		53816ED52164B0E80044FA70 /* MS.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MS.jpeg; sourceTree = "<group>"; };
+		53816ED62164B0E80044FA70 /* VS.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VS.jpeg; sourceTree = "<group>"; };
+		53816ED72164B0E80044FA70 /* MDL.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MDL.jpeg; sourceTree = "<group>"; };
+		53816ED82164B0E80044FA70 /* LB.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LB.jpeg; sourceTree = "<group>"; };
+		53816ED92164B0E80044FA70 /* MC.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MC.jpeg; sourceTree = "<group>"; };
+		53816EDA2164B0E80044FA70 /* LE.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LE.jpeg; sourceTree = "<group>"; };
+		53816EDB2164B0E80044FA70 /* AL.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AL.jpeg; sourceTree = "<group>"; };
 		640E8B5C2153F3550081078C /* App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		640E8B5F2153F3550081078C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		640E8B612153F3550081078C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,17 +68,12 @@
 		640E8B712153F9050081078C /* settingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsScreen.swift; sourceTree = "<group>"; };
 		640E8B732153FA080081078C /* selectSongScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSongScreen.swift; sourceTree = "<group>"; };
 		641866142158EEFF001CDC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "App-iOS/Other/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
-		643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Lil Uzi Vert - XO Tour Llif3.mp3"; path = "App-iOS/App-iOS/Songs/Lil Uzi Vert - XO Tour Llif3.mp3"; sourceTree = SOURCE_ROOT; };
-		643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; path = "App-iOS/App-iOS/Songs/Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3"; sourceTree = SOURCE_ROOT; };
-		643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Micheal Buble - Moondance.mp3"; path = "App-iOS/App-iOS/Songs/Micheal Buble - Moondance.mp3"; sourceTree = SOURCE_ROOT; };
-		643C448C2154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Travis Scott - Butterfly Effect.mp3"; path = "App-iOS/App-iOS/Songs/Travis Scott - Butterfly Effect.mp3"; sourceTree = SOURCE_ROOT; };
 		6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		6443B43F2159401D002C0745 /* aboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutScreen.swift; sourceTree = "<group>"; };
 		8D02CFB9C8E795F345987407 /* Pods-App-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-iOS/Pods-App-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1245566215B93C5003D73F9 /* AKPlaygroundLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKPlaygroundLoop.swift; sourceTree = "<group>"; };
 		E14D02252154E7EA00464509 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +94,22 @@
 				C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53816ED32164B0E80044FA70 /* Devs */ = {
+			isa = PBXGroup;
+			children = (
+				53816ED42164B0E80044FA70 /* FP.jpeg */,
+				53816ED52164B0E80044FA70 /* MS.jpeg */,
+				53816ED62164B0E80044FA70 /* VS.jpeg */,
+				53816ED72164B0E80044FA70 /* MDL.jpeg */,
+				53816ED82164B0E80044FA70 /* LB.jpeg */,
+				53816ED92164B0E80044FA70 /* MC.jpeg */,
+				53816EDA2164B0E80044FA70 /* LE.jpeg */,
+				53816EDB2164B0E80044FA70 /* AL.jpeg */,
+			);
+			name = Devs;
+			path = "App-iOS/Devs";
 			sourceTree = "<group>";
 		};
 		640E8B532153F3550081078C = {
@@ -99,6 +133,7 @@
 		640E8B5E2153F3550081078C /* App-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				53816ED32164B0E80044FA70 /* Devs */,
 				6443B43A2158F26F002C0745 /* Fonts */,
 				E14D022A2154F78E00464509 /* Helpers */,
 				E14D02272154F75D00464509 /* View */,
@@ -112,11 +147,12 @@
 		640E8B752153FCA90081078C /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				EE35EE3E2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 */,
-				643C448A2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 */,
-				643C44892154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 */,
-				643C448B2154E63D00914068 /* Micheal Buble - Moondance.mp3 */,
-				643C448C2154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 */,
+				530ECCFD2164AE510082D491 /* Ludovico Einaudi - Nuvole Bianche.mp3 */,
+				530ECCFC2164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 */,
+				530ECCFB2164AE510082D491 /* Micheal Buble - Moondance.mp3 */,
+				530ECCF82164AE510082D491 /* System Of A Down - Chop Suey!.mp3 */,
+				530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */,
+				530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */,
 			);
 			name = Songs;
 			path = "App-iOS/Songs";
@@ -248,16 +284,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				643C448F2154E63D00914068 /* Micheal Buble - Moondance.mp3 in Resources */,
-				643C448D2154E63D00914068 /* Lil Uzi Vert - XO Tour Llif3.mp3 in Resources */,
+				530ECCFE2164AE510082D491 /* System Of A Down - Chop Suey!.mp3 in Resources */,
+				530ECD022164AE510082D491 /* Metallica - The Unforgiven II (Video).mp3 in Resources */,
 				640E8B6A2153F3560081078C /* LaunchScreen.storyboard in Resources */,
-				643C44902154E63D00914068 /* Travis Scott - Butterfly Effect.mp3 in Resources */,
+				530ECD032164AE510082D491 /* Ludovico Einaudi - Nuvole Bianche.mp3 in Resources */,
 				6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */,
 				640E8B652153F3550081078C /* Main.storyboard in Resources */,
+				53816EDF2164B0E80044FA70 /* MDL.jpeg in Resources */,
+				53816EE32164B0E80044FA70 /* AL.jpeg in Resources */,
 				53734787215E1ACE000F9E8E /* SF-Pro-Display-Bold.otf in Resources */,
-				643C448E2154E63D00914068 /* Charlie Charles - Bimbi ft. Izi, Rkomi, Sfera Ebbasta, Tedua, Ghali.mp3 in Resources */,
+				530ECD012164AE510082D491 /* Micheal Buble - Moondance.mp3 in Resources */,
+				53816EE02164B0E80044FA70 /* LB.jpeg in Resources */,
+				53816EDE2164B0E80044FA70 /* VS.jpeg in Resources */,
+				530ECCFF2164AE510082D491 /* Yiruma - River Flows in You.mp3 in Resources */,
+				53816EE22164B0E80044FA70 /* LE.jpeg in Resources */,
+				53816EDD2164B0E80044FA70 /* MS.jpeg in Resources */,
+				53816EDC2164B0E80044FA70 /* FP.jpeg in Resources */,
+				53816EE12164B0E80044FA70 /* MC.jpeg in Resources */,
+				530ECD002164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 in Resources */,
 				641866152158EEFF001CDC0B /* Assets.xcassets in Resources */,
-				EE35EE3F2156D8820072755B /* Tchaikovsky Piano Concerto No 1 FULL - Martha Argerich, piano - Charles Dutoit, conductor.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
