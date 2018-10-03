@@ -35,6 +35,7 @@
 		6443B43C2158F26F002C0745 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6443B43B2158F26F002C0745 /* SF-Pro-Display-Light.otf */; };
 		6443B4402159401D002C0745 /* aboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6443B43F2159401D002C0745 /* aboutScreen.swift */; };
 		893E8EA5DEEDB830B3B88897 /* Pods_App_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */; };
+		D575A2422164C031004A94D9 /* Maluma - El Perdedorx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D575A2412164C031004A94D9 /* Maluma - El Perdedorx.mp3 */; };
 		E1245567215B93C5003D73F9 /* AKPlaygroundLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1245566215B93C5003D73F9 /* AKPlaygroundLoop.swift */; };
 		E14D02262154E7EA00464509 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D02252154E7EA00464509 /* Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 		6443B43F2159401D002C0745 /* aboutScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutScreen.swift; sourceTree = "<group>"; };
 		8D02CFB9C8E795F345987407 /* Pods-App-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-iOS/Pods-App-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C4D3CC4BC7959CF17FDE6DF0 /* Pods_App_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D575A2412164C031004A94D9 /* Maluma - El Perdedorx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Maluma - El Perdedorx.mp3"; sourceTree = "<group>"; };
 		E1245566215B93C5003D73F9 /* AKPlaygroundLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKPlaygroundLoop.swift; sourceTree = "<group>"; };
 		E14D02252154E7EA00464509 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 				530ECCF82164AE510082D491 /* System Of A Down - Chop Suey!.mp3 */,
 				530ECCFA2164AE510082D491 /* Travis Scott - Butterfly Effect.mp3 */,
 				530ECCF92164AE510082D491 /* Yiruma - River Flows in You.mp3 */,
+				D575A2412164C031004A94D9 /* Maluma - El Perdedorx.mp3 */,
 			);
 			name = Songs;
 			path = "App-iOS/Songs";
@@ -298,6 +301,7 @@
 				53816EDE2164B0E80044FA70 /* VS.jpeg in Resources */,
 				530ECCFF2164AE510082D491 /* Yiruma - River Flows in You.mp3 in Resources */,
 				53816EE22164B0E80044FA70 /* LE.jpeg in Resources */,
+				D575A2422164C031004A94D9 /* Maluma - El Perdedorx.mp3 in Resources */,
 				53816EDD2164B0E80044FA70 /* MS.jpeg in Resources */,
 				53816EDC2164B0E80044FA70 /* FP.jpeg in Resources */,
 				53816EE12164B0E80044FA70 /* MC.jpeg in Resources */,
