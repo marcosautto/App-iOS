@@ -120,7 +120,7 @@ class ViewController: UIViewController {
                     Vibration.light.vibrate()
                     toggleTorch(on: false)
                 case 141...190:
-                    Vibration.warning.vibrate()
+                    Vibration.selection.vibrate()
                     toggleTorch(on: TorchVerification)
                 case 191...210:
                     Vibration.heavy.vibrate()
@@ -129,10 +129,10 @@ class ViewController: UIViewController {
                     Vibration.medium.vibrate()
                     toggleTorch(on: TorchVerification)
                 case 261...300:
-                    Vibration.error.vibrate()
+                    Vibration.success.vibrate()
                     toggleTorch(on: false)
                 case 301...340:
-                    Vibration.success.vibrate()
+                    Vibration.error.vibrate()
                     toggleTorch(on: TorchVerification)
                 case 341...100000:
                     Vibration.medium.vibrate()
