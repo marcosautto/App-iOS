@@ -99,7 +99,7 @@ class ViewController: UIViewController {
         player.play()
         selectedSong = ""
         
-        AKPlaygroundLoop(every: 0.009999){
+        AKPlaygroundLoop(every: 0.0099){
             
             
             frequency = tracker.frequency
