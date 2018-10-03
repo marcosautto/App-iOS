@@ -35,7 +35,7 @@ class aboutScreen: UITableViewController {
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "gradiente"))
         self.tableView.separatorColor = UIColor.clear
         self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.title = "Team"
+        self.title = "Team about"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.backgroundColor = UIColor.black
         self.navigationController?.navigationBar.tintColor = UIColor.white
