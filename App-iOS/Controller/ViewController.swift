@@ -73,7 +73,10 @@ class ViewController: UIViewController {
             self.tapTo.center = CGPoint(x: 250, y:40 - 500)
         }, completion: nil)
         
+        
+        
         super.viewDidLoad()
+        
     }
     
     
@@ -211,6 +214,13 @@ class ViewController: UIViewController {
                 tapTo.textColor = UIColor.orange
             }
             
+            
+        }
+        
+        if songListening != nil && songListening.isHidden == false {
+            if player.isPlaying{
+                pulse()
+            }
             
         }
         
